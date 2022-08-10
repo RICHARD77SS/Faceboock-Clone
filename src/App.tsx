@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Tela from './Components/Tela'
+
+import light from './styles/themes/light';
+import dark from './styles/themes/dark';
+
+import usePersistedState from './utils/usePersistedState';
+
+import GlobalStyle from './styles/global'
+import Header from './Components/Header'
+
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+
+const App = () => {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Tela toggleTheme={toggleTheme} />
+        <GlobalStyle />
+        <Header />
+      </div>
+    </ThemeProvider>
   );
 }
 
