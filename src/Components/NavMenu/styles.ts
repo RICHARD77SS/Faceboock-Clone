@@ -8,8 +8,8 @@ export const NavMenuSt = Styled.ul`
   justify-content: space-between;
 `
 export const ListSt = Styled.li`
-  width: 90px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
   list-style-type: none;
   display: flex;
   align-items: center;

@@ -5,6 +5,8 @@ import Tela from './Components/Tela'
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
 
+import Main from './Components/Main';
+
 import usePersistedState from './utils/usePersistedState';
 
 import GlobalStyle from './styles/global'
@@ -24,6 +26,7 @@ const App = () => {
         <Tela toggleTheme={toggleTheme} />
         <GlobalStyle />
         <Header />
+        <Main />
       </div>
     </ThemeProvider>
   );

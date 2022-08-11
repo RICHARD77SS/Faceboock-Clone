@@ -13,8 +13,8 @@ export const ListSt = Styled.li`
   list-style-type: none;
   .svgSearch{
     position: absolute;
-    transform: translateX(-240px);
-    margin-top: 12px;
+    transform: translateX(25px);
+    margin-top: -8px;
     z-index: 100;
   }
   .input-search {
