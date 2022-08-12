@@ -25,6 +25,7 @@ export const ListSt = Styled.li`
   padding: 0 .5rem;
   font-size: .9rem;
   font-weight: 600;
+  color: ${Props => Props.theme.colors.text};
   img {
     width: 30px;
     height: 30px;
