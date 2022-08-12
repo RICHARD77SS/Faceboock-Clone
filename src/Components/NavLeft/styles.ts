@@ -11,6 +11,7 @@ export const ListSt = Styled.li`
   width: 10%;
   height: auto;
   list-style-type: none;
+  cursor: pointer;
   .svgSearch{
     position: absolute;
     transform: translateX(25px);

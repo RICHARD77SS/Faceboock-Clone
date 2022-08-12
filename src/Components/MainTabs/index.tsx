@@ -51,9 +51,9 @@ const MainTabs = () => {
       <Box sx={{width: '100%'}}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs value={value} onChange={handleChange} aria-label='tabs fb'>
-            <Tab label='Story' {...a11yProps(0)} />
-            <Tab label='Story' {...a11yProps(1)} />
-            <Tab label='Story' {...a11yProps(2)} />
+            <Tab className='tab' label='Stories' {...a11yProps(0)} />
+            <Tab className='tab' label='Videos do Reels' {...a11yProps(1)} />
+            <Tab className='tab' label='Salas' {...a11yProps(2)} />
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
@@ -63,7 +63,7 @@ const MainTabs = () => {
 
         </TabPanel>
         <TabPanel value={value} index={2}>
-          
+
         </TabPanel>
       </Box>
     </MainTabsSt>

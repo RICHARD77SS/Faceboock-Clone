@@ -18,6 +18,10 @@ export const ListSt = Styled.li`
   border-radius: 50px;
   list-style-type: none;
   background: ${Props => Props.theme.colors.secundary};
+  cursor: pointer;
+  :hover {
+  background:  ${Props => Props.theme.colors.hover};
+  }
   .image {
     min-width: 40px;
     min-height: 40px;

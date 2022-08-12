@@ -4,22 +4,12 @@ import { ButtonSt } from './styles'
 
 interface ButtonProps {
   children?: React.ReactNode;
-
+  className?: string;
   name?: string;
   type?: "button" | "submit" | "reset";
   onclick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
 
-  color?: string;
-  background?: string;
-
-  width?: string;
-  height?: string;
-  margin?: string;
-  padding?: string;
-
-  border?: string;
-  radius?: string;
 }
 
 const Button = (Props: ButtonProps) => {

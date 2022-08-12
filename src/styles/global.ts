@@ -10,5 +10,6 @@ export default createGlobalStyle`
   }
   body{
     background: ${Props => Props.theme.colors.secundary};
+    color: ${Props => Props.theme.colors.text};
   }
 `
