@@ -6,9 +6,11 @@ export const MainTabsSt = Styled.div`
   border-radius: 10px;
   background: ${Props => Props.theme.colors.background};
   .tab {
-    width: 150px;
+    width: 155px;
     font-weight: 700;
-    font-size: .7rem;
+    font-size: .8rem;
+    margin:.4rem;
+    border-radius: 10px;
     :hover {
       background:${Props => Props.theme.colors.secundary};
     }

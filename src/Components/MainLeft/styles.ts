@@ -70,6 +70,7 @@ export const UlSt = Styled.ul`
   .Mui-expanded {
     margin: 0;
   }
+  
 `
 export const ListSt = Styled.li`
   width: 100%;
@@ -79,10 +80,11 @@ export const ListSt = Styled.li`
   padding: 0 .5rem;
   font-size: .9rem;
   font-weight: 600;
-  color: ${Props => Props.theme.colors.text};
+  border-radius: 10px;
   cursor: pointer;
-  :hover {
-  background: ${Props => Props.theme.colors.hover};
+  color: ${Props => Props.theme.colors.text};
+  &:hover {
+    background: ${Props => Props.theme.colors.hover};
   }
   img {
     width: 30px;
@@ -90,4 +92,5 @@ export const ListSt = Styled.li`
     border-radius: 50px;
     margin: 0 .5rem;
   }
+  
 `

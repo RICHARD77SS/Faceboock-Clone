@@ -11,7 +11,7 @@ const MainLeft = () => {
   return (
     <MainLeftSt>
       <UlSt>
-        <ListSt><img src='https://i.postimg.cc/brczWrGr/richardsilva.jpg' alt='' /><span>Richard Silva</span></ListSt>
+        <ListSt className='List'><img src='https://i.postimg.cc/brczWrGr/richardsilva.jpg' alt='' /><span>Richard Silva</span></ListSt>
         <ListSt><img src='https://i.postimg.cc/tCSphBX2/amigos.png' alt='' /><span>Amigos</span></ListSt>
         <ListSt><img src='https://i.postimg.cc/SRCKxC0c/grupos.png' alt='' /><span>Grupos</span></ListSt>
         <ListSt><img src='https://i.postimg.cc/3xnxN3qf/marketplace.png' alt='' /><span>Marketplace</span></ListSt>
