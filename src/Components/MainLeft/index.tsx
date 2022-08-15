@@ -4,7 +4,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import Hr from '../Hr';
 import { MainLeftSt, UlSt, ListSt, AtalhosSt } from './styles';
 
 const MainLeft = () => {
@@ -51,7 +51,7 @@ const MainLeft = () => {
           </AccordionDetails>
         </Accordion>
       </UlSt>
-      <span className='hr' ></span>
+      <Hr width='70%' />
       <AtalhosSt>
         <span className='seus-atalhos'>Seus Atalhos</span>
       </AtalhosSt>

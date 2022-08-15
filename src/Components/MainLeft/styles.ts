@@ -7,13 +7,6 @@ export const MainLeftSt = Styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  .hr {
-    width: 70%;
-    height:.5px;
-    margin-right: 4rem;
-    background: ${Props => Props.theme.colors.text};
-    opacity: 0.3;
-  }
   
 `
 export const AtalhosSt = Styled.div`

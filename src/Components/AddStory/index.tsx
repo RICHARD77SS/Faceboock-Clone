@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { AiOutlineClose } from 'react-icons/ai'
 import Button from '../Button';
 import ModalAddStory from '../ModalAddStory';
 import { StorySt } from './styles';
@@ -31,7 +31,7 @@ const AddStory = () => {
       </Button>
       {addStory ?
         <ModalAddStory>
-          <Button className='btn-close' onClick={() => close()}>Close</Button>
+          <Button className='btn-close' onClick={() => close()}><AiOutlineClose /></Button>
         </ModalAddStory>
         : null}
     </>
