@@ -12,7 +12,7 @@ export const ModalSt = Styled.div`
   z-index: 999;
 `
 export const ModalLeftSt = Styled.div`
-  width: 25%;
+  min-width: 350px;
   height: 100%;
   background: ${Props => Props.theme.colors.background};
   display: flex;

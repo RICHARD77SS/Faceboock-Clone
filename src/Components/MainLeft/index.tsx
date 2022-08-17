@@ -2,7 +2,6 @@ import React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Hr from '../Hr';
 import { MainLeftSt, UlSt, ListSt, AtalhosSt } from './styles';
@@ -26,7 +25,7 @@ const MainLeft = () => {
             id="panel1a-header"
           >
 
-            <Typography className='typ'><pre>Ver Mais</pre></Typography>
+            <pre><p className='typ'>Ver Mais</p></pre>
           </AccordionSummary>
           <AccordionDetails className='accordion-details'>
             <ListSt><img src='https://i.postimg.cc/kXX760d2/ajudadacomunidade.png' alt='' /><span>Ajuda da Comunidade</span></ListSt>

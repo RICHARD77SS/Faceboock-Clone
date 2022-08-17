@@ -44,13 +44,27 @@ export const UlSt = Styled.ul`
     background: ${Props => Props.theme.colors.hover};
     border-radius: 20px;
     opacity: 0.7;
+    position: absolute;
+    margin-left: -6rem;
+    transform: translatey(-.8rem);
+  }
+  .typ {
+    margin-left: 2.5rem;
+    font-size: .9rem;
+    font-weight: 700;
+    color: ${Props => Props.theme.colors.text};
   }
   .accordion-details {
     padding: 0;
     margin-bottom: 4rem;
   }
+  .accordion-summary {
+    border-radius: 10px;
+  }
   .accordion-summary.Mui-expanded {
     padding-left: 1rem;
+    width: 275px;
+    border-radius: 10px;
     position: absolute;
     transform: translatey(850px);
   }
