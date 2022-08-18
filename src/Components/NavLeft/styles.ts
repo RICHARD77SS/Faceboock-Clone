@@ -19,7 +19,7 @@ export const ListSt = Styled.li`
     z-index: 100;
   }
   .input-search {
-    width: 240px;
+    width: 250px;
     height: 40px;
     border: none;
     margin-left: 1.2rem;
@@ -29,7 +29,7 @@ export const ListSt = Styled.li`
     transform: translateY(-20px);
     background: ${Props => Props.theme.colors.secundary}; 
     z-index: 10;
-    @media (max-width: 1024px){
+    @media (max-width: 1260px){
       width: 40px;
       :hover {
         width: 240px;

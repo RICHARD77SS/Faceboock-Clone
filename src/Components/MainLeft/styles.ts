@@ -7,7 +7,7 @@ export const MainLeftSt = Styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 1024px) {
+  @media (max-width: 1100px) {
     display: none;
   }
   

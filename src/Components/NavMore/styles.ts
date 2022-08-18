@@ -5,20 +5,20 @@ export const NavMoreSt = Styled.div`
   height: auto;
   display: none;
   .btn-more {
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    font-weight: 700;
     color: ${Props => Props.theme.colors.text};
-    background: ${Props => Props.theme.colors.secundary};
     :hover {
-      background: ${Props => Props.theme.colors.hover};
+      background: ${Props => Props.theme.colors.secundary};
     }
   }
-  @media(max-width: 1024px){
+  @media(max-width: 1100px){
     display: block;
   }
 `

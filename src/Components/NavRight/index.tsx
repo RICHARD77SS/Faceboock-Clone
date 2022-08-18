@@ -1,13 +1,13 @@
 import { NavRightSt, ListSt } from './styles'
 import Tooltip from '@mui/material/Tooltip';
-
+import Menu from '../Menu';
 const NavRight = () => {
   
   return (
     <NavRightSt>
       <Tooltip title='Menu'>
         <ListSt>
-          <svg fill="currentColor" viewBox="0 0 44 44" width="1em" height="1em" ><circle cx="7" cy="7" r="6"></circle><circle cx="22" cy="7" r="6"></circle><circle cx="37" cy="7" r="6"></circle><circle cx="7" cy="22" r="6"></circle><circle cx="22" cy="22" r="6"></circle><circle cx="37" cy="22" r="6"></circle><circle cx="7" cy="37" r="6"></circle><circle cx="22" cy="37" r="6"></circle><circle cx="37" cy="37" r="6"></circle></svg>
+          <Menu />
         </ListSt>
       </Tooltip>
       <Tooltip title='Messenger'>

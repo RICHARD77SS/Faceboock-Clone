@@ -7,4 +7,7 @@ export const MainCenterSt = Styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 1100px){
+    padding-left: 4.5rem;
+  }
 `

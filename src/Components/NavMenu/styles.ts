@@ -6,9 +6,15 @@ export const NavMenuSt = Styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .btn-game{
+    width: 100px;
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
 `
 export const ListSt = Styled.li`
-  width: 100px;
+  min-width: 100px;
   height: 50px;
   list-style-type: none;
   display: flex;
@@ -19,4 +25,5 @@ export const ListSt = Styled.li`
   :hover {
     background: ${Props => Props.theme.colors.secundary};
   }
+  
 `

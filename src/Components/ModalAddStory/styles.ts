@@ -76,3 +76,24 @@ export const FlexSt = Styled.div`
     font-weight: 700;
   }
 ` 
+export const ModalAddStoryTopNavSt = Styled.div`
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`
+export const ModalAddStoryBlockSt = Styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`
+export const ModalAddStoryFlexSt = Styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
