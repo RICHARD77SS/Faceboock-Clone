@@ -1,30 +1,39 @@
 import Styled from 'styled-components';
 
-export const MainLeftSt = Styled.div`
-  width: 25%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  @media (max-width: 1024px) {
-    display: none;
-  }
-  
-`
-export const AtalhosSt = Styled.div`
-  width: 100%;
+export const NavMoreSt = Styled.div`
+  width: auto;
   height: auto;
-  padding: 1.5rem;
-  .seus-atalhos {
-    font-size: 1.1rem;
-    font-weight: 700;
+  display: none;
+  .btn-more {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
     color: ${Props => Props.theme.colors.text};
-    opacity: .8;
+    background: ${Props => Props.theme.colors.secundary};
+    :hover {
+      background: ${Props => Props.theme.colors.hover};
+    }
   }
+  @media(max-width: 1024px){
+    display: block;
+  }
+`
+export const NavMoreContentSt = Styled.div`
+  width: 100%;
+  height: 1800px;
+  top: 3.5rem;
+  left: 0;
+  background: ${Props => Props.theme.colors.secundary};
+  position: absolute;
+  display: flex;
+  z-index: 999;
 `
 export const UlSt = Styled.ul`
-  width: 100%;
+  width: 350px;
   height: 100%;
   display: flex;
   align-items: center;

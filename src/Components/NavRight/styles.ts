@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const NavRightSt = Styled.ul`
-  width: 16%;
+  width: 220px;
   height: 60px;
   display: flex;
   align-items: center;

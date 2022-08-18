@@ -23,7 +23,7 @@ export const Flex1St = Styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  
+  border-bottom: .5px solid rgba(0,0,0,0.2);
   img {
     width: 40px;
     height: 40px;
@@ -45,20 +45,34 @@ export const Flex2St = Styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  margin: .5rem;
   .btn {
     width: 33%;
-    height: 100%;
+    height: 40px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
     :hover {
       background: ${Props => Props.theme.colors.hover};
     }
+    p{
+      font-size: .8rem;
+    }
+  }
+  .btn.icoa{
+    color: #F3425F;
+  }
+  .btn.icob{
+    color: #45BD62;
+  }
+  .btn.icoc{
+    color: #F7B928;
   }
   p{
     margin: .5rem;
+    color: #606770;
   }
 `
 
@@ -68,7 +82,7 @@ export const ModalConteinerSt = Styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.3);
+  background: rgba(200,200,200,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +100,7 @@ export const ModalPostSt = Styled.div`
     width: 95%;
     height: 60px;
     margin: 1rem; 
-    border-radius: 10px;
+    border-radius: 5px;
     background: #ccc;
     :hover {
     background: ${Props => Props.theme.colors.hover};
@@ -95,6 +109,8 @@ export const ModalPostSt = Styled.div`
   .input-text {
       width: 100%;
       height: 250px;
+      padding: 1rem;
+      font-size: 1.5rem;
       border: none;
       :focus{
         outline: none !important;
@@ -109,6 +125,9 @@ export const ModlSt = Styled.div`
   align-items: center;
   padding: 1rem;
   justify-content: space-around;
+  img{
+    margin-top: 1rem;
+  }
   .btn {
     background: 
   }
@@ -131,7 +150,7 @@ export const ModlSt = Styled.div`
   }
   .btn-col{
     margin-right: 24.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   :hover {
     filter: brightness(.7);
   }
@@ -155,10 +174,20 @@ export const ModlSt = Styled.div`
 `
 export const ModlBlockSt = Styled.div`
   width: 500px;
-  height: 50px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding-top: 1rem;
+  .btn-mod {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ccc;
+    padding: .2rem;
+    border-radius: 5px;
+  }
 `
 export const AdicionarSt = Styled.div`
   width: 480px;
@@ -168,4 +197,38 @@ export const AdicionarSt = Styled.div`
   justify-content: flex-end;
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.4);
-`
+  p{
+    margin-right: 2rem;
+    font-weight: 500;
+  }
+  .btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    :hover {
+      background: ${Props => Props.theme.colors.hover};
+    }
+  }
+  .btn.a{
+    color: #41B35D;
+  }
+  .btn.b{
+    color: #1877F2;
+  }
+  .btn.c{
+    color: #F7B928;
+  }
+  .btn.d{
+    color: #F5533D;
+  }
+  .btn.e{
+    color: #39AFD5;
+  }
+  .btn.f{
+    color: #606770;
+  }
+  `

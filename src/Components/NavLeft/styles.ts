@@ -8,7 +8,7 @@ export const NavLeftSt = Styled.ul`
 
 `
 export const ListSt = Styled.li`
-  width: 10%;
+  width: 30px;
   height: auto;
   list-style-type: none;
   cursor: pointer;
@@ -29,6 +29,17 @@ export const ListSt = Styled.li`
     transform: translateY(-20px);
     background: ${Props => Props.theme.colors.secundary}; 
     z-index: 10;
+    @media (max-width: 1024px){
+      width: 40px;
+      :hover {
+        width: 240px;
+      }
+      :focus {
+        border: none;
+        width: 240px;
+        outline: none;
+      }
+    }
   }
   .input-search:focus {
     border: none;
