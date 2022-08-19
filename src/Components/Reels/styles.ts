@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 
-export const StorySt = Styled.div`
+export const ReelsSt = Styled.div`
   width: 120px;
   height: 200px;
   margin: .5rem;
@@ -18,26 +18,6 @@ export const StorySt = Styled.div`
   }
   :hover {
     filter: brightness(90%);
-  }
-`
-export const UserImageSt = Styled.div`
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -65px;
-  background: #216FDB;
-  border-radius: 30px;
-  border: 4px solid #fff;
-  font-size: 1.5rem;
-  color: #fff;
-  transform: translatey(.5rem);
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
   }
 `
 export const UsernameSt = Styled.div`

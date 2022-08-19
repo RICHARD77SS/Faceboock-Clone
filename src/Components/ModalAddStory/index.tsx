@@ -7,19 +7,20 @@ import Logo from '../Logo';
 import MakeTextStory from '../MakeTextStory';
 import MakePhotoStory from '../MakePhotoStory';
 import Menu from '../Menu';
-
+import { AiOutlineClose } from 'react-icons/ai'
+import { Link } from 'react-router-dom';
 
 import { ModalSt, ModalLeftSt, ModalRightSt, FlexSt, ModalAddStoryTopNavSt, ModalAddStoryBlockSt, ModalAddStoryFlexSt } from './styles';
-interface PropsModal {
-  children: React.ReactNode;
-}
-const ModalAddStory = (Props: PropsModal) => {
+
+const ModalAddStory = () => {
 
   return (
-    <ModalSt {...Props}>
+    <ModalSt>
       <ModalLeftSt>
         <FlexSt>
-          {Props.children}
+          <Link to='/'>
+            <Button className='btn-close' ><AiOutlineClose /></Button>
+          </Link>
           <Logo />
         </FlexSt>
         <Hr width='100%' />

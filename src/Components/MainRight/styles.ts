@@ -7,12 +7,16 @@ export const MainRightSt = Styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
   .hr {
     width: 85%;
     margin-top: 1rem;
     height:.5px;
     background: ${Props => Props.theme.colors.text};
     opacity: 0.3;
+  }
+  @media(max-width: 920px) {
+    display: none;
   }
 `
 export const GruposSt = Styled.div`

@@ -12,6 +12,7 @@ export const MenuSt = Styled.div`
     justify-content: center;
     font-size: 1.8rem;
     font-weight: 700;
+    cursor: pointer;
     color: ${Props => Props.theme.colors.text};
     :hover {
       background: ${Props => Props.theme.colors.hover};
@@ -19,8 +20,8 @@ export const MenuSt = Styled.div`
   }
 `
 export const MenuContentSt = Styled.div`
-  width: 45%;
-  height: 100%;
+  width: 580px;
+  height: 550px;
   background: ${Props => Props.theme.colors.secundary};
   position: absolute;
   z-index: 999;
@@ -63,7 +64,7 @@ export const TopBarSt = Styled.ul`
 `
 export const CriarSt = Styled.ul`
   width: 40%;
-  height: 100%;
+  height: 90%;
   display: flex;
   border-radius: 10px;
   margin-left: 1rem;
@@ -104,7 +105,7 @@ export const CriarSt = Styled.ul`
 `
 export const UlSt = Styled.ul`
   width: 70%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: start;
   border-radius: 10px;

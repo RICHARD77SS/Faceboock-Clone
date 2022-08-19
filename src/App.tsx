@@ -1,11 +1,12 @@
 import React from 'react';
-
-import Tela from './Components/Tela'
+import { Route, Routes } from 'react-router-dom';
 
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
 
+import Tela from './Components/Tela'
 import Main from './Components/Main';
+import ModalAddStory from './Components/ModalAddStory';
 
 import usePersistedState from './utils/usePersistedState';
 
@@ -26,7 +27,12 @@ const App = () => {
         <Tela toggleTheme={toggleTheme} />
         <GlobalStyle />
         <Header />
-        <Main />
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/story' element={<ModalAddStory />} >
+            
+          </Route>
+        </Routes>
       </div>
     </ThemeProvider>
   );

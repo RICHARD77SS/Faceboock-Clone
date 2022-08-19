@@ -6,7 +6,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 import Storys from '../Storys';
-
+import Reels from '../Reels'
+import Salas from '../Salas'
 import { MainTabsSt } from './styles';
 
 interface TabPanelProps {
@@ -53,7 +54,7 @@ const MainTabs = () => {
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs value={value} onChange={handleChange} aria-label='tabs fb'>
             <Tab className='tab' label='Stories' {...a11yProps(0)} />
-            <Tab className='tab' label='Videos do Reels' {...a11yProps(1)} />
+            <Tab className='tab' label='Reels' {...a11yProps(1)} />
             <Tab className='tab' label='Salas' {...a11yProps(2)} />
           </Tabs>
         </Box>
@@ -61,10 +62,10 @@ const MainTabs = () => {
           <Storys />
         </TabPanel>
         <TabPanel value={value} index={1}>
-
+          <Reels />
         </TabPanel>
         <TabPanel value={value} index={2}>
-
+          <Salas />
         </TabPanel>
       </Box>
     </MainTabsSt>
