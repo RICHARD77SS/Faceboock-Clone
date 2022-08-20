@@ -6,6 +6,7 @@ export const NavMoreSt = Styled.div`
   display: none;
   .btn-more {
     width: 100px;
+    min-width: 60px;
     height: 50px;
     border-radius: 10px;
     display: flex;

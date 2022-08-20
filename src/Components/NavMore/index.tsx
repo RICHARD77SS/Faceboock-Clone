@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
-
+import Tooltip from '@mui/material/Tooltip';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -15,10 +15,11 @@ const NavMore = () => {
     setOpenMore(openMore === true ? false : true);
   };
   return (
-    <>
-      <NavMoreSt>
-        <Button className='btn-more' onClick={() => toggleTheme()}><AiOutlineMenu /></Button>
-      </NavMoreSt>
+    <><Tooltip title='Mais'>
+        <NavMoreSt>
+          <Button className='btn-more' onClick={() => toggleTheme()}><AiOutlineMenu /></Button>
+        </NavMoreSt>
+      </Tooltip>
       {openMore ?
         <NavMoreContentSt>
           <UlSt>

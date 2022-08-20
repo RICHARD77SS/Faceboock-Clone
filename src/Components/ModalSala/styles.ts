@@ -55,13 +55,7 @@ export const SalaCenterSt = Styled.div`
   padding-top: 1rem;
   color: #000;
 `
-export const SalaBottomSt = Styled.div`
-  width: 100%;
-  height: auto;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1rem;
+export const SalaBottomSt = Styled(SalaCenterSt)`
   p{
     font-size: .8rem;
     
