@@ -1,37 +1,59 @@
 import React from 'react';
-import { FaUserFriends } from 'react-icons/fa';
+import { FaUserFriends, FaRegCommentAlt } from 'react-icons/fa';
 import { FiMoreHorizontal } from 'react-icons/fi';
-
-import { PostSt, PostHeaderSt, ImageSt, PostFooterSt } from './styles';
+import { RiShareForwardLine } from 'react-icons/ri';
+import { BiLike } from 'react-icons/bi';
+import { BsFillHeartFill } from 'react-icons/bs';
+import { IoMdArrowDropdown } from 'react-icons/io';
+import { AiFillLike } from 'react-icons/ai';
+import { PostSt, PostHeaderSt, ImageSt, PostFooterSt, FlexSt, BlockSt, Icon, Iconb } from './styles';
 
 import Button from '../Button';
+import Hr from '../Hr';
 
 const Post = () => {
   return (
     <PostSt>
       <PostHeaderSt>
-        <img src="" alt="usuario" />
-        <div className="block">
+        <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="usuario" />
+        <BlockSt>
           <h4>Richard Silva</h4>
           <p>20 de agosto às 19:00 <FaUserFriends /></p>
-        </div>
+        </BlockSt>
         <Button className='btn-more'><FiMoreHorizontal /></Button>
       </PostHeaderSt>
       <ImageSt>
         <img src="" alt="" />
       </ImageSt>
       <PostFooterSt>
-        <div className="flex-info">
-          <div className="likes"></div>
-          <div className="comentarios"></div>
-          <div className="compartilhamentos"></div>
-        </div>
-        <div className="flex-input">
-          <div className="curtir"></div>
-          <div className="comentar"></div>
-          <div className="compartilhar"></div>
-          <div className="conta"></div>
-        </div>
+        <FlexSt>
+          <FlexSt className='icons-reaction'>
+            <Button><Icon><AiFillLike /></Icon></Button>
+            <Button><Iconb><BsFillHeartFill /></Iconb></Button>
+
+          </FlexSt>
+          <p>2 comentarios</p> 
+          <p>3 compartilhamentos</p>
+        </FlexSt>
+        <Hr className='hr' width='98%' />
+        <FlexSt>
+          <Button className='btn'>
+            <BiLike />
+            <p>Curtir</p>
+          </Button>
+          <Button className='btn'>
+            <FaRegCommentAlt />
+            <p>Comentar</p>
+          </Button>
+          <Button className='btn'>
+            <RiShareForwardLine />
+            <p>Compartilhar</p>
+          </Button>
+          <Button className='btn2'>
+            <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
+            <IoMdArrowDropdown />
+          </Button>
+        </FlexSt>
       </PostFooterSt>
     </PostSt>
   )
