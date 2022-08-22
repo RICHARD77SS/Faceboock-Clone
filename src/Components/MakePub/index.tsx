@@ -5,10 +5,9 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { BiWorld } from 'react-icons/bi';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { FiMoreHorizontal } from 'react-icons/fi';
-import { ImRadioChecked2 } from 'react-icons/im';
 import { HiFlag } from 'react-icons/hi';
 import { MdOutlineEmojiEmotions, MdPhotoLibrary } from 'react-icons/md';
-import { FaUserTag } from 'react-icons/fa';
+import { FaUserTag, FaMapMarkerAlt } from 'react-icons/fa';
 import { BsEmojiSmile } from 'react-icons/bs';
 
 import { MakePubSt, Flex1St, Flex2St, ModalPostSt, ModalConteinerSt, AdicionarSt, ModlSt, ModlBlockSt } from './styles';
@@ -60,7 +59,7 @@ export const MakePub = () => {
                 <Button className='btn a'><MdPhotoLibrary /></Button>
                 <Button className='btn b'><MdOutlineEmojiEmotions /></Button>
                 <Button className='btn c'><FaUserTag /></Button>
-                <Button className='btn d'><ImRadioChecked2 /></Button>
+                <Button className='btn d'><FaMapMarkerAlt /></Button>
                 <Button className='btn e'><HiFlag /></Button>
                 <Button className='btn f'><FiMoreHorizontal /></Button>
               </AdicionarSt>

@@ -2,16 +2,22 @@ import React from 'react';
 import { FaUserFriends, FaRegCommentAlt } from 'react-icons/fa';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { RiShareForwardLine } from 'react-icons/ri';
-import { BiLike } from 'react-icons/bi';
-import { BsFillHeartFill } from 'react-icons/bs';
+import { BiLike, BiBookmarkAlt, BiRadioCircleMarked } from 'react-icons/bi';
+import { BsFillHeartFill, BsEmojiSmile, BsCamera } from 'react-icons/bs';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { AiFillLike } from 'react-icons/ai';
-import { PostSt, PostHeaderSt, ImageSt, PostFooterSt, FlexSt, BlockSt, Icon, Iconb } from './styles';
+import { MdOutlineGif } from 'react-icons/md';
+import { PostSt, PostHeaderSt, ImageSt, PostFooterSt, FlexSt, BlockSt, Icon, Iconb, PostCommentSt, InputsSt, InsertsSt } from './styles';
 
+import Input from '../Input';
 import Button from '../Button';
 import Hr from '../Hr';
 
 const Post = () => {
+  
+  const [comment, setComment] = React.useState(false);
+
+
   return (
     <PostSt>
       <PostHeaderSt>
@@ -41,7 +47,7 @@ const Post = () => {
             <BiLike />
             <p>Curtir</p>
           </Button>
-          <Button className='btn'>
+          <Button className='btn' onClick={()=>{setComment(true)}}>
             <FaRegCommentAlt />
             <p>Comentar</p>
           </Button>
@@ -55,6 +61,32 @@ const Post = () => {
           </Button>
         </FlexSt>
       </PostFooterSt>
+      {comment?
+        <>
+          <PostCommentSt>
+            <InputsSt>
+              <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="usuario" />
+              <Input className='input' placeholder='  Escreva um comentario...' type='text' />
+              <InsertsSt>
+                <Button className='btn-ico'>
+                  <BiRadioCircleMarked className='ico' />
+                </Button>
+                <Button className='btn-ico'>
+                  <BsEmojiSmile className='ico' />  
+                </Button>
+                <Button className='btn-ico'>
+                  <BsCamera className='ico' />
+                </Button>
+                <Button className='btn-ico'>
+                  <MdOutlineGif className='ico' />
+                </Button>
+                <Button className='btn-ico'>
+                  <BiBookmarkAlt className='ico' />
+                </Button>
+              </InsertsSt>
+            </InputsSt>
+          </PostCommentSt>
+      </>: null}
     </PostSt>
   )
 }

@@ -82,6 +82,9 @@ export const ModalAddStoryTopNavSt = Styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  img {
+    border-radius: 40px;
+  }
 `
 export const ModalAddStoryBlockSt = Styled.div`
   width: 100%;

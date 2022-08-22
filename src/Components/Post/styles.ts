@@ -95,7 +95,7 @@ export const BlockSt = Styled.div`
     font-size: .8rem;
   }
   
-` 
+`
 export const Icon = Styled(FlexSt)`
   width: 20px;
   height: 20px;
@@ -109,4 +109,48 @@ export const Icon = Styled(FlexSt)`
 export const Iconb = Styled(Icon)`
   background: #F03655;
   color: #fff;
+`
+export const PostCommentSt = Styled.div`
+  width: 500px;
+  padding-bottom: 1rem;
+
+  .input{
+    width: 88%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: ${Props => Props.theme.colors.secundary};
+  }
+`
+export const InputsSt = Styled.div`
+  width: auto;
+  display: flex;
+  align-items: center;
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    margin: 0 .5rem;
+  }
+`
+export const InsertsSt = Styled.div`
+  width: auto;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 22rem;
+  .btn-ico{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover {
+      background: ${Props => Props.theme.colors.hover};
+    }
+  }
+  .ico {
+    font-size: 1rem;
+  }
 `
