@@ -11,9 +11,10 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 
 import { ModalSt, ModalLeftSt, ModalRightSt, FlexSt, ModalAddStoryTopNavSt, ModalAddStoryBlockSt, ModalAddStoryFlexSt } from './styles';
+import Config from '../Config';
 
 const ModalAddStory = () => {
-
+ const [config, setConfig] = React.useState(false)
   return (
     <ModalSt>
       <ModalLeftSt>
@@ -26,8 +27,14 @@ const ModalAddStory = () => {
         <Hr width='100%' />
         <FlexSt>
           <h2>Seu Story</h2>
-          <Button className='btn-config'><BsFillGearFill /></Button>
+          <Button onClick={() => { setConfig(true) }} className='btn-config'><BsFillGearFill /></Button>
         </FlexSt>
+        {config?
+          <>
+            <Config>
+              <Button onClick={() => {setConfig(false)}}>Cancelar</Button>
+            </Config>
+          </> : null}
         <FlexSt>
           <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
           <p>Richard Silva</p>

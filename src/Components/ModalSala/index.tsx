@@ -14,7 +14,7 @@ interface ModalProps {
   children?: React.ReactNode;
 }
 
-const ModalReels = (Props:ModalProps) => {
+const ModalSala = (Props:ModalProps) => {
   return (
     <ModalSalaSt {...Props}>
       <ModalSalaContentSt>
@@ -61,4 +61,4 @@ const ModalReels = (Props:ModalProps) => {
   )
 }
 
-export default ModalReels;
+export default ModalSala;

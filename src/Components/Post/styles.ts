@@ -120,6 +120,10 @@ export const PostCommentSt = Styled.div`
     border-radius: 20px;
     border: none;
     background: ${Props => Props.theme.colors.secundary};
+    :focus{
+      border: none;
+      outline: none;
+    }
   }
 `
 export const InputsSt = Styled.div`
