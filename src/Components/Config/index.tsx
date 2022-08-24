@@ -4,7 +4,7 @@ import React from 'react';
 import { BiWorld } from 'react-icons/bi'
 import { FaUserFriends, FaUserEdit } from 'react-icons/fa'
 
-import { ConfigSt, ConfigTopSt, ConfigCenterSt, ConfigFlexSt, IconDivSt, BlockDivSt, ConfigBottomSt, ConfigBgSt } from './styles';
+import { ConfigSt, ConfigTopSt, ConfigCenterSt, ConfigFlexSt, IconDivSt, BlockDivSt, ConfigBottomSt, ConfigBgSt, BottomTextSt } from './styles';
 
 import Input from '../Input';
 import Button from '../Button';
@@ -13,26 +13,27 @@ interface ConfigProps {
   children: React.ReactNode;
 }
 
-const Config = (Props:ConfigProps) => {
+const Config = (Props: ConfigProps) => {
+
   return (
     <ConfigBgSt>
 
       <ConfigSt>
         <ConfigTopSt>
-          <h2>Privacidade do story</h2>
+          <h3>Privacidade do story</h3>
         </ConfigTopSt>
         <ConfigCenterSt>
-          <h3>Quem pode ver seu story?</h3>
+          <h4>Quem pode ver seu story?</h4>
           <p>Seu story ficará visível no Facebook e no Messenger por 24 horas.</p>
           <ConfigFlexSt>
             <IconDivSt>
               <BiWorld />
             </IconDivSt>
             <BlockDivSt>
-              <h3>Público</h3>
+              <h4>Público</h4>
               <p>Qualquer pessoa no Facebook ou Messager</p>
             </BlockDivSt>
-            <Input type='radio' /> 
+            <Input name='option' value='primeiro' type='radio' checked />
           </ConfigFlexSt>
           <ConfigFlexSt>
             <IconDivSt>
@@ -42,7 +43,7 @@ const Config = (Props:ConfigProps) => {
               <h3>Amigos</h3>
               <p>Somente seus amigos do facebook</p>
             </BlockDivSt>
-            <Input type='radio' /> 
+            <Input name='option' type='radio' />
           </ConfigFlexSt>
           <ConfigFlexSt>
             <IconDivSt>
@@ -52,15 +53,17 @@ const Config = (Props:ConfigProps) => {
               <h3>Personalizado</h3>
               <p>Escolha para quem mostrar seu story</p>
             </BlockDivSt>
-            <Input type='radio' /> 
+            <Input name='option' type='radio' />
           </ConfigFlexSt>
 
         </ConfigCenterSt>
-          <p>Somente seus amigos e conexões podem responder diretamente ao seu story</p>
+        <BottomTextSt>
+          <p>Somente seus amigos e conexões podem responder diretamente ao seu<br /> story</p>
+        </BottomTextSt>
 
         <ConfigBottomSt>
           {Props.children}
-          <Button>Salvar</Button>
+          <Button className='btn salvar'>Salvar</Button>
         </ConfigBottomSt>
       </ConfigSt>
     </ConfigBgSt>

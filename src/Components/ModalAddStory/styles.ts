@@ -59,7 +59,7 @@ export const FlexSt = Styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 35px;
-    background: #ccc;
+    background: #ddd;
     font-size: 1.2rem;
     transform: translatex(10rem);
     :hover {

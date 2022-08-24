@@ -32,7 +32,7 @@ const ModalAddStory = () => {
         {config?
           <>
             <Config>
-              <Button onClick={() => {setConfig(false)}}>Cancelar</Button>
+              <Button className='btn cancelar' onClick={() => {setConfig(false)}}>Cancelar</Button>
             </Config>
           </> : null}
         <FlexSt>
