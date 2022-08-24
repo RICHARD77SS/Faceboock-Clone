@@ -7,6 +7,7 @@ import dark from './styles/themes/dark';
 import Tela from './Components/Tela'
 import Main from './Components/Main';
 import ModalAddStory from './Components/ModalAddStory';
+import ModalReels from './Components/ModalReels';
 
 import usePersistedState from './utils/usePersistedState';
 
@@ -29,9 +30,9 @@ const App = () => {
         <Header />
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='/story' element={<ModalAddStory />} >
-            
-          </Route>
+          <Route path='/story' element={<ModalAddStory />} />
+          <Route path='/reels' element={<ModalReels />} />
+          
         </Routes>
       </div>
     </ThemeProvider>
