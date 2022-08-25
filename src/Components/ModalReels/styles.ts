@@ -129,7 +129,7 @@ justify-content: center;
 margin-top: 1rem;
 `
 export const DivIcob = Styled.div`
-  width: 60px;
+width: 60px;
 height: 60px;
 border-radius: 40px;
 background: #666;
