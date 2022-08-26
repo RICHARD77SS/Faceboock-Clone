@@ -10,14 +10,16 @@ export const BatepapoSt = Styled.div`
   align-items: center;
   justify-content: start;
   position: absolute;
+  padding: .5rem;
   top: 4rem;
   right: 1rem;
   input {
-    width: 90%;
+    width: 95%;
     height: 35px;
     border-radius: 20px;
     background: ${Props => Props.theme.colors.secundary};
     border: none;
+    margin-bottom: .5rem;
   }
 `
 export const BatepapoTopSt = Styled.div`
@@ -26,9 +28,9 @@ export const BatepapoTopSt = Styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: .5rem;
   h2 {
-    margin-right: 1rem;
+    margin-right: 1.6rem;
     color: #111;
   }
 `
@@ -39,6 +41,7 @@ export const BatepapoUsersSt = Styled.div`
   align-items: center;
   justify-content: flex-start;
   padding: .5rem;
+  border-radius: 10px;
   img {
     width: 50px;
     height: 50px;
@@ -49,25 +52,42 @@ export const BatepapoUsersSt = Styled.div`
     position: absolute;
     right: 1rem;
   }
+  .ai {
+    color: #888;
+    position: absolute;
+    right: 1rem;
+  }
+  :hover {
+    background: ${Props => Props.theme.colors.hover};
+  }
 `
 export const BlockSt = Styled.div`
   width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: center;
   margin-left: .5rem;
-  margin-right:  8rem;
+  margin-right:  
+  text-align: left;
+  p{
+    font-size: .8rem;
+  }
+  .bl {
+    color: ${Props => Props.theme.colors.primary}
+  }
 `
 export const DivSt = Styled.div`
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #ddd;
+  font-size: 2rem;
 `
 export const DivIcoSt = Styled.div`
   width: 30px;
