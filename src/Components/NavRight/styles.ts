@@ -8,6 +8,14 @@ export const NavRightSt = Styled.ul`
   padding: 0 .5rem;
   margin-left: 3.8rem;
   justify-content: space-around;
+  .bd {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 101;
+  }
   .main-menu {
     @media (max-width: 1100px) {
       display: none;

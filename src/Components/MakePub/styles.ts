@@ -7,13 +7,20 @@ export const MakePubSt = Styled.div`
   flex-direction: column;
   align-items: center;
   margin: 1rem;
-  
   background: ${Props => Props.theme.colors.background};
   border-radius: 10px;
+  z-index: 10;
   .hr {
     margin-left: 4rem;
   }
-  z-index: 100;
+  .bd {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 101;
+  }
 `
 
 export const Flex1St = Styled.div`
@@ -77,7 +84,7 @@ export const Flex2St = Styled.div`
 `
 
 export const ModalConteinerSt = Styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -86,6 +93,7 @@ export const ModalConteinerSt = Styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
 `
 export const ModalPostSt = Styled.div`
   width: 500px;
@@ -96,6 +104,7 @@ export const ModalPostSt = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 110;
   .btn-publ {
     width: 95%;
     height: 60px;
@@ -167,7 +176,7 @@ export const ModlSt = Styled.div`
     margin-right: 1.5rem;
     margin-bottom: 1rem;
   :hover {
-    background: ${Props =>Props.theme.colors.hover};
+    background: ${Props => Props.theme.colors.hover};
   }
 }
 

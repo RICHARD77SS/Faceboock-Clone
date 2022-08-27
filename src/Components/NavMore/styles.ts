@@ -15,6 +15,9 @@ export const NavMoreSt = Styled.div`
     font-size: 1.8rem;
     font-weight: 700;
     color: ${Props => Props.theme.colors.text};
+    @media(max-width: 1100px){
+    width: 80px;
+  }
     :hover {
       background: ${Props => Props.theme.colors.secundary};
     }

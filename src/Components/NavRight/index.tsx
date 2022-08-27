@@ -40,6 +40,7 @@ const NavRight = () => {
       {openCriar ?
         <>
           <CriarMain />
+          <Button className='bd' onClick={() => setOpenCriar(false)}></Button>
         </> : null}
       <Tooltip title='Messenger'>
         <ListSt>
@@ -52,6 +53,7 @@ const NavRight = () => {
       {openMess ?
         <>
           <Batepapo />
+          <Button className='bd' onClick={() => setOpenMess(false)}></Button>
         </>
         : null}
       <Tooltip title='Notificações'>
@@ -65,6 +67,7 @@ const NavRight = () => {
       {openNotification ?
         <>
           <Notification />
+          <Button className='bd' onClick={() => setOpenNotification(false)}></Button>
         </>
         : null}
       <Tooltip title='Conta'>

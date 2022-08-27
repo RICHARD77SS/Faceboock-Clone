@@ -22,52 +22,48 @@ import SentimentoAtividade from '../Sentimento/atividade'
 
 export const MakePub = () => {
   const [postOpen, setPostOpen] = React.useState(false);
-  const open = () => {
-    setPostOpen(true)
-    document.body.style.overflow = 'hidden'
-  }
-  const close = () => {
-    setPostOpen(false)
-    document.body.style.overflow = 'unset'
-  }
+
   return (
     <MakePubSt>
       <Flex1St>
         <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
         {postOpen ?
-          <ModalConteinerSt>
-            <ModalPostSt>
-              <ModlSt>
-                <h3>Criar publicação</h3>
-                <Button className='btn-close' onClick={() => close()}><AiOutlineClose /></Button>
-              </ModlSt>
-              <Hr width='100%' className='hr' />
-              <ModlSt>
-                <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
-                <ModlBlockSt>
-                  <p>Richard Silva</p>
-                  <Button className='btn-mod'><BiWorld />Publico<IoMdArrowDropdown /></Button>
-                </ModlBlockSt>
-              </ModlSt>
-              <textarea className='input-text' title='text' placeholder='   No que você esta pensando, Richard ?'></textarea>
-              <ModlSt>
-                <Button className='btn-col'><img src="https://i.postimg.cc/nrrh3qNz/download.png" alt="" /></Button>
-                <Button className='btn-emo'><BsEmojiSmile /></Button>
-              </ModlSt>
-              <AdicionarSt>
-                <p>Adicionar à sua puclicação</p>
-                <Button className='btn a'><MdPhotoLibrary /></Button>
-                <Button className='btn b'><MdOutlineEmojiEmotions /></Button>
-                <Button className='btn c'><FaUserTag /></Button>
-                <Button className='btn d'><FaMapMarkerAlt /></Button>
-                <Button className='btn e'><HiFlag /></Button>
-                <Button className='btn f'><FiMoreHorizontal /></Button>
-              </AdicionarSt>
-              <Button className='btn-publ'>Publicar</Button>
-            </ModalPostSt>
-          </ModalConteinerSt>
+          <>
+            <Button className='bd' onClick={() => setPostOpen(false)}></Button>
+            <ModalConteinerSt>
+              <ModalPostSt>
+                <ModlSt>
+                  <h3>Criar publicação</h3>
+                  <Button className='btn-close' onClick={() => setPostOpen(false)}><AiOutlineClose /></Button>
+                </ModlSt>
+                <Hr width='100%' className='hr' />
+                <ModlSt>
+                  <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
+                  <ModlBlockSt>
+                    <p>Richard Silva</p>
+                    <Button className='btn-mod'><BiWorld />Publico<IoMdArrowDropdown /></Button>
+                  </ModlBlockSt>
+                </ModlSt>
+                <textarea className='input-text' title='text' placeholder='   No que você esta pensando, Richard ?'></textarea>
+                <ModlSt>
+                  <Button className='btn-col'><img src="https://i.postimg.cc/nrrh3qNz/download.png" alt="" /></Button>
+                  <Button className='btn-emo'><BsEmojiSmile /></Button>
+                </ModlSt>
+                <AdicionarSt>
+                  <p>Adicionar à sua puclicação</p>
+                  <Button className='btn a'><MdPhotoLibrary /></Button>
+                  <Button className='btn b'><MdOutlineEmojiEmotions /></Button>
+                  <Button className='btn c'><FaUserTag /></Button>
+                  <Button className='btn d'><FaMapMarkerAlt /></Button>
+                  <Button className='btn e'><HiFlag /></Button>
+                  <Button className='btn f'><FiMoreHorizontal /></Button>
+                </AdicionarSt>
+                <Button className='btn-publ'>Publicar</Button>
+              </ModalPostSt>
+            </ModalConteinerSt>
+          </>
           : null}
-        <Input placeholder=' Noque voce esta pensando. Richard?' className='input' onClick={() => open()} />
+        <Input placeholder=' Noque voce esta pensando. Richard?' className='input' onClick={() => setPostOpen(true)} />
       </Flex1St>
       
       <Flex2St>

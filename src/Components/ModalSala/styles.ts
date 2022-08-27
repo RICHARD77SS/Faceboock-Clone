@@ -1,16 +1,14 @@
 import Styled from 'styled-components';
 
 export const ModalSalaSt = Styled.div`
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   background: rgba(255,255,255,0.6);
-  z-index: 999;
+  z-index: 120;
 `
 export const ModalSalaContentSt = Styled.div`
   width: 500px;
@@ -18,6 +16,8 @@ export const ModalSalaContentSt = Styled.div`
   padding: 1rem;
   background: ${Props => Props.theme.colors.background};
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.4);
+  position: fixed;
+  z-index: 120;
 `
 export const ModalSt = Styled.div`
   width: 100%;

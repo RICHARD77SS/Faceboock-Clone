@@ -18,6 +18,14 @@ export const MenuSt = Styled.div`
       background: ${Props => Props.theme.colors.hover};
     }
   }
+  .bd {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 101;
+  }
 `
 export const MenuContentSt = Styled.div`
   width: 580px;

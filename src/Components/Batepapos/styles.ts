@@ -9,10 +9,11 @@ export const BatepapoSt = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  position: absolute;
+  position: fixed;
   padding: .5rem;
   top: 4rem;
   right: 1rem;
+  z-index: 102;
   input {
     width: 95%;
     height: 35px;

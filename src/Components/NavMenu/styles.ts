@@ -19,6 +19,10 @@ export const NavMenuSt = Styled.ul`
       display: none;
     }
   }
+  @media (max-width: 1100px) {
+    width: 40%;
+    transform: translatex(-2rem);
+  }
   @media (max-width: 700px){
     justify-content: flex-start;
     padding-left: 1.5rem;
@@ -37,6 +41,9 @@ export const ListSt = Styled.li`
   cursor: pointer;
   :hover {
     background: ${Props => Props.theme.colors.secundary};
+  }
+  @media (max-width: 1100px) {
+    width: 80px;
   }
   @media (max-width: 700px){
     display: none;

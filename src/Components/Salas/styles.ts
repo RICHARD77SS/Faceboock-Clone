@@ -1,6 +1,15 @@
 import Styled from 'styled-components';
 
-
+export const Div = Styled.div`
+  .bd {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+  }
+`
 export const SalasSt = Styled.div`
   width: 200px;
   height: 200px;
