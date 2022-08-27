@@ -10,9 +10,9 @@ import ModalAddStory from './Components/ModalAddStory';
 import ModalReels from './Components/ModalReels';
 
 import usePersistedState from './utils/usePersistedState';
-
-import GlobalStyle from './styles/global'
-import Header from './Components/Header'
+import NavMore from './Components/NavMore';
+import GlobalStyle from './styles/global';
+import Header from './Components/Header';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
@@ -32,6 +32,7 @@ const App = () => {
           <Route path='/' element={<Main />} />
           <Route path='/story' element={<ModalAddStory />} />
           <Route path='/reels' element={<ModalReels />} />
+          <Route path='/bookmarks' element={<NavMore />} />
           
         </Routes>
       </div>

@@ -1,44 +1,23 @@
 import Styled from 'styled-components';
 
-export const NavMoreSt = Styled.div`
-  width: auto;
-  height: auto;
-  display: none;
-  .btn-more {
-    width: 100px;
-    min-width: 60px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: ${Props => Props.theme.colors.text};
-    @media(max-width: 1100px){
-    width: 80px;
-  }
-    :hover {
-      background: ${Props => Props.theme.colors.secundary};
-    }
-  }
-  @media(max-width: 1100px){
-    display: block;
-  }
-`
+
 export const NavMoreContentSt = Styled.div`
-  width: 100%;
-  height: 1800px;
+  min-width: 100%;
+  height: auto;
   top: 3.5rem;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: ${Props => Props.theme.colors.secundary};
-  position: absolute;
+  flex-direction: column;
+  position: fixed;
   display: flex;
   z-index: 999;
+  overflow-y: scroll;
 `
 export const UlSt = Styled.ul`
   width: 350px;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -94,6 +73,17 @@ export const UlSt = Styled.ul`
     margin: 0;
   }
   
+`
+export const AtalhosSt = Styled.div`
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  .seus-atalhos {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: ${Props => Props.theme.colors.text};
+    opacity: .8;
+  }
 `
 export const ListSt = Styled.li`
   width: 100%;

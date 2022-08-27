@@ -11,13 +11,13 @@ export const ListSt = Styled.li`
   width: 30px;
   height: auto;
   list-style-type: none;
-  cursor: pointer;
   .svgSearch{
     position: absolute;
-    transform: translateX(25px);
+    transform: translateX(24px);
     margin-top: -8px;
     z-index: 100;
   }
+  
   .input-search {
     width: 250px;
     height: 40px;
@@ -33,6 +33,16 @@ export const ListSt = Styled.li`
       width: 40px;
       :hover {
         width: 240px;
+      }
+      :focus {
+        border: none;
+        width: 240px;
+        outline: none;
+      }
+    }
+    @media (max-width: 768px) {
+      :hover {
+        width: 40px;
       }
       :focus {
         border: none;

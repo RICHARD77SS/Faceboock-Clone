@@ -7,6 +7,7 @@ import Menu from '../Menu';
 import CriarMain from '../CriarMain';
 import Notification from '../Notification';
 import Batepapo from '../Batepapos';
+import ContaModal from '../Conta';
 
 const NavRight = () => {
   const [openCriar, setOpenCriar] = React.useState(false);
@@ -18,9 +19,15 @@ const NavRight = () => {
   const toggleMess = () => {
     setOpenMess(openMess === true ? false : true);
   }
+
   const [openNotification, setOpenNotification] = React.useState(false);
   const toggleNotification = () => {
     setOpenNotification(openNotification === true ? false : true);
+
+  }
+  const [openConta, setOpenConta] = React.useState(false);
+  const toggleConta = () => {
+    setOpenConta(openConta === true ? false : true);
   }
 
   return (
@@ -44,7 +51,7 @@ const NavRight = () => {
         </> : null}
       <Tooltip title='Messenger'>
         <ListSt>
-          <Button onClick={()=>toggleMess()}>
+          <Button onClick={() => toggleMess()}>
             <svg viewBox="0 0 28 28" fill="#000" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path>
             </svg>
           </Button>
@@ -66,15 +73,23 @@ const NavRight = () => {
       </Tooltip>
       {openNotification ?
         <>
-          <Notification />
           <Button className='bd' onClick={() => setOpenNotification(false)}></Button>
+          <Notification />
         </>
         : null}
       <Tooltip title='Conta'>
         <ListSt>
-          <img className='image' src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/120923170_1006167356475369_7354394842471469497_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Pyp9kDCjpVgAX93LRRR&tn=GQbFix6_80bH1mDo&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-Pg3h2TmGfm4KcKlbb1sQnOqJ6qIPAAlbLM0MCA2Ihaw&oe=6317C312" alt="" />
+          <Button className='btn-img' onClick={() => toggleConta()}>
+            <img width={20} className='image' src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/120923170_1006167356475369_7354394842471469497_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Pyp9kDCjpVgAX93LRRR&tn=GQbFix6_80bH1mDo&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-Pg3h2TmGfm4KcKlbb1sQnOqJ6qIPAAlbLM0MCA2Ihaw&oe=6317C312" alt="" />
+          </Button>
         </ListSt>
       </Tooltip>
+      {openConta ?
+        <>
+          <Button className='bd' onClick={() => setOpenConta(false)}></Button>
+          <ContaModal />
+        </>
+        : null}
     </NavRightSt>
   )
 }

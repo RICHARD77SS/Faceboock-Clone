@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const NavMenuSt = Styled.ul`
-  width: 43%;
+  width: 45%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -29,8 +29,43 @@ export const NavMenuSt = Styled.ul`
   }
 
 `
-export const ListSt = Styled.li`
+export const NavMoreSt = Styled.div`
   width: 100px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  .btn-more {
+    width: 100px;
+    min-width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  :hover {
+    background: ${Props => Props.theme.colors.secundary};
+  }
+  @media(max-width: 1100px){
+    width: 80px;
+    display: flex;
+  }
+  @media(max-width: 768px){
+    width: 50px
+  }
+  @media(max-width: 700px){
+    transform: translatex(3rem);
+  }
+
+`
+export const ListSt = Styled.li`
+  width: 120px;
   min-width: 60px;
   height: 50px;
   list-style-type: none;
@@ -44,6 +79,9 @@ export const ListSt = Styled.li`
   }
   @media (max-width: 1100px) {
     width: 80px;
+  }
+  @media(max-width: 768px){
+    width: 50px
   }
   @media (max-width: 700px){
     display: none;

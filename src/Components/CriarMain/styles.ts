@@ -14,7 +14,7 @@ export const CriarSt = Styled.ul`
   z-index: 999;
   position: absolute;
   top: 3.5rem;
-  left: 60%;
+  right: 1rem;
   h3{
     padding: 1rem .5rem;
   }
