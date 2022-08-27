@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import Tooltip from '@mui/material/Tooltip';
 import { ModalReelsSt, ReelsNavLeftSt, ReelsNavCenterSt, ReelsBlockSt, ReelsTopSt, ReelsContentSt, ReelsRightSt, ReelsNavRightSt, DivIconSt, DivIco, DivIcob } from './styles';
 import { FaCommentAlt } from 'react-icons/fa';
@@ -6,10 +9,10 @@ import { FiMoreHorizontal } from 'react-icons/fi';
 import { BsFillPlayFill } from 'react-icons/bs';
 import { BiWorld } from 'react-icons/bi';
 import { GiSpeaker } from 'react-icons/gi';
-import { AiFillLike, AiFillCaretRight } from 'react-icons/ai';
+import { AiFillLike, AiFillCaretRight, AiOutlineClose } from 'react-icons/ai';
 import { RiShareForwardFill } from 'react-icons/ri';
 import NavRight from '../NavRight';
-
+import Button from '../Button';
 import Logo from '../Logo';
 
 const ModalReels = () => {
@@ -17,7 +20,11 @@ const ModalReels = () => {
   return (
     <ModalReelsSt>
       <ReelsNavLeftSt>
+        <Link to='/'>
+          <Button className='btn-close'><AiOutlineClose /></Button>
+        </Link>
         <Logo />
+        <h2>Reels</h2>
       </ReelsNavLeftSt>
       <ReelsNavCenterSt>
         <ReelsTopSt>

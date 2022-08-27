@@ -17,6 +17,22 @@ display: flex;
 align-items: start;
 padding: 1rem;
 background: #555;
+.btn-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: .5rem; 
+}
+h2{
+  color: #fff;
+  margin: .4rem 1rem;
+}
 `
 export const ReelsNavCenterSt = Styled.div`
 min-width: 400px;
@@ -114,7 +130,7 @@ width: fit-content;
 height: auto;
 display: flex;
 align-items: start;
-margin-left: 7rem;
+margin-left: 10rem;
 `
 export const DivIco = Styled.div`
 min-width: 35px;
