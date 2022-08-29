@@ -53,5 +53,7 @@ export const ListSt = Styled.li`
   }
   .input-search:focus {
     border: none;
+    outline: none;
   }
+  
 `

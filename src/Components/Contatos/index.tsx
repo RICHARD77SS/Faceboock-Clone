@@ -3,9 +3,15 @@ import { MdMoreHoriz, MdVideoCall, MdSearch } from 'react-icons/md'
 import Button from '../Button';
 
 import { ContatosSt, FlexSt, ContatoUsersSt } from './styles'
+import { GrClose } from 'react-icons/gr';
+
+import listaDeContatos from './listaDeContatos.json'
+import Contato from '../Contato';
+
+import Mensagem from '../Mensagem';
 
 const Contatos = () => {
-
+  const [openMensagem, setOpenMensagem] = React.useState(false)
   return (
     <ContatosSt>
       <FlexSt>
@@ -16,30 +22,24 @@ const Contatos = () => {
         <Button className='bt-more'><MdMoreHoriz className='ico' /></Button>
       </FlexSt>
       <ContatoUsersSt>
-        <Button className='bt-user'>
-          <img src="https://cdn.pixabay.com/photo/2020/04/11/05/21/boots-5028821_960_720.jpg" alt="" />
-          <h4>Username</h4>
-        </Button>
-        <Button className='bt-user'>
-          <img src="https://cdn.pixabay.com/photo/2020/04/11/05/21/boots-5028821_960_720.jpg" alt="" />
-          <h4>Username</h4>
-        </Button>
-        <Button className='bt-user'>
-          <img src="https://cdn.pixabay.com/photo/2020/04/11/05/21/boots-5028821_960_720.jpg" alt="" />
-          <h4>Username</h4>
-        </Button>
-        <Button className='bt-user'>
-          <img src="https://cdn.pixabay.com/photo/2020/04/11/05/21/boots-5028821_960_720.jpg" alt="" />
-          <h4>Username</h4>
-        </Button>
-        <Button className='bt-user'>
-          <img src="https://cdn.pixabay.com/photo/2020/04/11/05/21/boots-5028821_960_720.jpg" alt="" />
-          <h4>Username</h4>
-        </Button>
-        <Button className='bt-user'>
-          <img src="https://cdn.pixabay.com/photo/2020/04/11/05/21/boots-5028821_960_720.jpg" alt="" />
-          <h4>Username</h4>
-        </Button>
+        {listaDeContatos.map((ContatoInfo) => {
+          return (
+            <>
+              <Contato id={ContatoInfo.id} name={ContatoInfo.nome} image={ContatoInfo.img} >
+                <Button className='btn-icon' onClick={() => setOpenMensagem(true)}>
+                </Button>
+              </Contato>
+              {openMensagem ? 
+                <>
+                  <Mensagem name={ContatoInfo.nome} image={ContatoInfo.img} >
+                    <Button className='btn-icon' onClick={() => setOpenMensagem(false)}><GrClose />
+                    </Button>
+                  </Mensagem>
+                </>: null}
+            
+            </>
+          )
+        })}
       </ContatoUsersSt>
     </ContatosSt>
   )

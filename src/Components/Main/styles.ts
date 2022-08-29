@@ -5,5 +5,5 @@ export const MainSt = Styled.div`
   height: 100%;
   display: flex;
   padding-top: 4rem;
-  justify-content: space-around;
+  justify-content: space-between;
 `

@@ -9,6 +9,9 @@ export const PostSt = Styled.div`
   justify-content: center;
   flex-direction: column;
   background: ${Props => Props.theme.colors.background};
+  @media (max-width: 520px) {
+    width: 470px;
+  }
 `
 export const PostHeaderSt = Styled.div`
   width: 100%;
@@ -16,6 +19,12 @@ export const PostHeaderSt = Styled.div`
   padding: .5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   img {
     width: 40px;
     height: 40px;
@@ -38,6 +47,9 @@ export const ImageSt = Styled.div`
   width: 500px;
   height: 500px;
   background: ${Props => Props.theme.colors.hover};
+  @media (max-width: 520px) {
+    width: 470px;
+  }
 `
 export const PostFooterSt = Styled(PostHeaderSt)`
   flex-direction: column;
@@ -90,7 +102,7 @@ export const BlockSt = Styled.div`
   width: auto;
   height: auto;
   margin-left: .5rem;
-  margin-right: 16rem;
+
   p{
     font-size: .8rem;
   }

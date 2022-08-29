@@ -1,12 +1,13 @@
 import Styled from 'styled-components';
 
 export const NavRightSt = Styled.ul`
-  min-width: 220px;
+  min-width: 200px;
   height: 60px;
   display: flex;
   align-items: center;
   padding: 0 .5rem;
   margin-left: 3.8rem;
+  margin-right: -1rem;
   justify-content: space-around;
   .bd {
     top: 0;

@@ -21,6 +21,9 @@ export const MakePubSt = Styled.div`
     position: fixed;
     z-index: 101;
   }
+  @media (max-width: 520px) {
+    width: 470px;
+  }
 `
 
 export const Flex1St = Styled.div`

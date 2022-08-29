@@ -57,7 +57,7 @@ export const NavMoreSt = Styled.div`
     display: flex;
   }
   @media(max-width: 768px){
-    width: 50px
+    width: 70px
   }
   @media(max-width: 700px){
     transform: translatex(3rem);
@@ -81,7 +81,7 @@ export const ListSt = Styled.li`
     width: 80px;
   }
   @media(max-width: 768px){
-    width: 50px
+    width: 70px
   }
   @media (max-width: 700px){
     display: none;

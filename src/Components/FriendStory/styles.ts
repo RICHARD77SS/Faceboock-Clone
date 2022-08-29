@@ -30,7 +30,7 @@ export const UserImageSt = Styled.div`
   margin-left: -65px;
   background: #216FDB;
   border-radius: 30px;
-  border: 4px solid #fff;
+  border: 4px solid ${Props => Props.theme.colors.primary};
   font-size: 1.5rem;
   color: #fff;
   transform: translatey(.5rem);

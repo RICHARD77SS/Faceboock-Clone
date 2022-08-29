@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const MainRightSt = Styled.div`
-  width: 25%;
+  width: 300px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ export const MainRightSt = Styled.div`
     background: ${Props => Props.theme.colors.text};
     opacity: 0.3;
   }
-  @media(max-width: 920px) {
+  @media(max-width: 900px) {
     display: none;
   }
 `

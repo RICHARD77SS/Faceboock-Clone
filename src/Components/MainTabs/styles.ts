@@ -15,4 +15,7 @@ export const MainTabsSt = Styled.div`
       background:${Props => Props.theme.colors.secundary};
     }
   }
+  @media (max-width: 520px) {
+    width: 470px;
+  }
 `

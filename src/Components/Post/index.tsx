@@ -21,11 +21,14 @@ const Post = () => {
   return (
     <PostSt>
       <PostHeaderSt>
-        <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="usuario" />
-        <BlockSt>
-          <h4>Richard Silva</h4>
-          <p>20 de agosto às 19:00 <FaUserFriends /></p>
-        </BlockSt>
+        <div className="flex">
+          <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="usuario" />
+          <BlockSt>
+            <h4>Richard Silva</h4>
+            <p>20 de agosto às 19:00 <FaUserFriends /></p>
+          </BlockSt>
+
+        </div>
         <Button className='btn-more'><FiMoreHorizontal /></Button>
       </PostHeaderSt>
       <ImageSt>
