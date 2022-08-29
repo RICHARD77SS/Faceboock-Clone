@@ -25,10 +25,8 @@ const Contatos = () => {
         {listaDeContatos.map((ContatoInfo) => {
           return (
             <>
-              <Contato id={ContatoInfo.id} name={ContatoInfo.nome} image={ContatoInfo.img} >
-                <Button className='btn-icon' onClick={() => setOpenMensagem(true)}>
-                </Button>
-              </Contato>
+              <Contato id={ContatoInfo.id} name={ContatoInfo.nome} image={ContatoInfo.img} function={() => setOpenMensagem(true)} />
+              
               {openMensagem ? 
                 <>
                   <Mensagem name={ContatoInfo.nome} image={ContatoInfo.img} >

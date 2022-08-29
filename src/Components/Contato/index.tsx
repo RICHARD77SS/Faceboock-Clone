@@ -8,14 +8,13 @@ interface contatoProps {
   id?: string;
   name?: string;
   image?: string;
-  children?: React.ReactNode;
+  function?: any;
 }
 
 const Contato = (Props: contatoProps) => {
   return (
     <ContatoSt {...Props}>
-      {Props.children}
-      <Button id={Props.id} className='bt-user' >
+      <Button id={Props.id} className='bt-user' onClick={Props.function}>
         <img src={Props.image} alt="" />
         <h4>{Props.name}</h4>
       </Button>
