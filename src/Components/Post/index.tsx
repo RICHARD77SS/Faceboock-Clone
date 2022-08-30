@@ -7,42 +7,57 @@ import { BsFillHeartFill, BsEmojiSmile, BsCamera } from 'react-icons/bs';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { AiFillLike } from 'react-icons/ai';
 import { MdOutlineGif } from 'react-icons/md';
+
 import { PostSt, PostHeaderSt, ImageSt, PostFooterSt, FlexSt, BlockSt, Icon, Iconb, PostCommentSt, InputsSt, InsertsSt } from './styles';
 
 import Input from '../Input';
 import Button from '../Button';
 import Hr from '../Hr';
 
-const Post = () => {
-  
+
+interface PostProps {
+  perfilImage?: string;
+  perfilImageAlt?: string;
+  perfilName?: string;
+  postData?: string;
+  postTime?: string;
+  postImage?: string;
+  postImageAlt?: string;
+  postLikes?: string;
+  postComments?: string;
+  postShares?: string;
+}
+
+const Post = (Props: PostProps) => {
+
   const [comment, setComment] = React.useState(false);
 
 
   return (
-    <PostSt>
+    <PostSt {...Props}>
       <PostHeaderSt>
         <div className="flex">
-          <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="usuario" />
+          <img src={Props.perfilImage} alt={Props.perfilImageAlt} />
           <BlockSt>
-            <h4>Richard Silva</h4>
-            <p>20 de agosto às 19:00 <FaUserFriends /></p>
+            <h4>{Props.perfilName}</h4>
+            <div className='flex-p'>{Props.postData} às {Props.postTime}  <FaUserFriends /> </div>
           </BlockSt>
 
         </div>
         <Button className='btn-more'><FiMoreHorizontal /></Button>
       </PostHeaderSt>
       <ImageSt>
-        <img src="" alt="" />
+        <img src={Props.postImage} alt={Props.postImageAlt} />
       </ImageSt>
       <PostFooterSt>
         <FlexSt>
-          <FlexSt className='icons-reaction'>
+          <FlexSt className='like'>
             <Button><Icon><AiFillLike /></Icon></Button>
             <Button><Iconb><BsFillHeartFill /></Iconb></Button>
-
+            <p>{Props.postLikes}</p>
           </FlexSt>
-          <p>2 comentarios</p> 
-          <p>3 compartilhamentos</p>
+          <p>{Props.postComments} comentarios</p>
+          <p>{Props.postShares} compartilhamentos</p>
         </FlexSt>
         <Hr className='hr' width='98%' />
         <FlexSt>
@@ -50,7 +65,7 @@ const Post = () => {
             <BiLike />
             <p>Curtir</p>
           </Button>
-          <Button className='btn' onClick={()=>{setComment(true)}}>
+          <Button className='btn' onClick={() => { setComment(true) }}>
             <FaRegCommentAlt />
             <p>Comentar</p>
           </Button>
@@ -64,7 +79,7 @@ const Post = () => {
           </Button>
         </FlexSt>
       </PostFooterSt>
-      {comment?
+      {comment ?
         <>
           <PostCommentSt>
             <InputsSt>
@@ -75,7 +90,7 @@ const Post = () => {
                   <BiRadioCircleMarked className='ico' />
                 </Button>
                 <Button className='btn-ico'>
-                  <BsEmojiSmile className='ico' />  
+                  <BsEmojiSmile className='ico' />
                 </Button>
                 <Button className='btn-ico'>
                   <BsCamera className='ico' />
@@ -89,7 +104,7 @@ const Post = () => {
               </InsertsSt>
             </InputsSt>
           </PostCommentSt>
-      </>: null}
+        </> : null}
     </PostSt>
   )
 }

@@ -8,6 +8,7 @@ export const PostSt = Styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 1rem;
   background: ${Props => Props.theme.colors.background};
   @media (max-width: 520px) {
     width: 470px;
@@ -49,6 +50,10 @@ export const ImageSt = Styled.div`
   background: ${Props => Props.theme.colors.hover};
   @media (max-width: 520px) {
     width: 470px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
   }
 `
 export const PostFooterSt = Styled(PostHeaderSt)`
@@ -94,15 +99,21 @@ export const FlexSt = Styled.div`
       height: 20px;
     }
   }
-  .icons-reaction {
-    margin-right: 9rem;
+  .like {
+    margin-right: 1.5rem;
   }
+  
 `
+
 export const BlockSt = Styled.div`
   width: auto;
   height: auto;
   margin-left: .5rem;
-
+  .flex-p {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+  }
   p{
     font-size: .8rem;
   }

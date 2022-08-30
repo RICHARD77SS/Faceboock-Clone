@@ -1,14 +1,14 @@
 import React from 'react';
 
 import AddStory from '../AddStory';
-import FriendStory from '../FriendStory';
+import StorysViws from '../StorysViws';
 import { StorysSt } from './styles';
 
 const Storys = () => {
   return (
     <StorysSt>
       <AddStory />
-      <FriendStory />
+      <StorysViws />
     </StorysSt>
   )
 }

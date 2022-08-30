@@ -1,6 +1,10 @@
 import Styled from 'styled-components';
 
-export const StorySt = Styled.div`
+interface Props{
+  storyImage?: string;
+}
+
+export const StorySt = Styled.div<Props>`
   width: 120px;
   height: 200px;
   margin: .5rem;
@@ -9,21 +13,16 @@ export const StorySt = Styled.div`
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.1);
-  
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
+  background: url(${Props => Props.storyImage}) center no-repeat;
+  background-size: cover;
   :hover {
     filter: brightness(90%);
   }
 `
 export const UserImageSt = Styled.div`
-  position: absolute;
+  position: relative;
   width: 40px;
-  height: 40px;
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,8 +40,9 @@ export const UserImageSt = Styled.div`
   }
 `
 export const UsernameSt = Styled.div`
-  position: absolute;
-  margin-top: 180px;
+  position: relative;
+  margin-top: 130px;
+  text-shadow: 0 0 4px #000;
   width: auto;
   height: auto;
   color: #fff;
