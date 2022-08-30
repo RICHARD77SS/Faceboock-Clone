@@ -1,11 +1,12 @@
 import Styled from 'styled-components';
 
-export const ContatoSt = Styled.div`
+export const GroupContactsSt = Styled.div`
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .bt-user {
     width: 100%;
     height: auto;
