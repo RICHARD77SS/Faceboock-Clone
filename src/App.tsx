@@ -30,8 +30,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='/story' element={<ModalAddStory />} />
-          <Route path='/reels' element={<ModalReels />} />
+          <Route path='/story/' element={<ModalAddStory />} />
+          <Route path='/reels/' element={<ModalReels />} />
           <Route path='/bookmarks' element={<NavMore />} />
           
         </Routes>

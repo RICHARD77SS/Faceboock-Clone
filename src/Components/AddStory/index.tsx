@@ -10,7 +10,7 @@ const AddStory = () => {
   return (
     <>
       
-      <Link to='/story'>
+      <Link to='/story/'>
         <Button >
           <StorySt>
           

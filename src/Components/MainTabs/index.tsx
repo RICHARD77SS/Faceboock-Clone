@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 import Storys from '../Storys';
-import Reels from '../Reels'
+import ReelsList from '../ReelsList'
 import Salas from '../Salas'
 import { MainTabsSt } from './styles';
 
@@ -62,7 +62,7 @@ const MainTabs = () => {
           <Storys />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Reels />
+          <ReelsList />
         </TabPanel>
         <TabPanel value={value} index={2}>
           <Salas />

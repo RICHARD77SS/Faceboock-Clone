@@ -21,10 +21,13 @@ export const ReelsSt = Styled.div`
   }
 `
 export const UsernameSt = Styled.div`
-  position: absolute;
-  margin-top: 180px;
+  position: relative;
   width: auto;
-  height: auto;
-  color: #fff;
-  border-radius: 10px;
+  height: 0;
+  color: #000;
+  p{
+    position: absolute;
+    transform: translatey(-2rem);
+    margin-left: -1rem;
+  }
 `

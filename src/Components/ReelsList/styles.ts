@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 
-export const StorysSt = Styled.div`
+export const ReelsListSt = Styled.div`
   width: 100%;
   height: auto;
   display: flex;
