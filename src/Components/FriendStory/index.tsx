@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StorySt, UserImageSt, UsernameSt } from './styles';
+import { StorySt, UserImageSt, UsernameSt, Div } from './styles';
 
 import { Link } from 'react-router-dom';
 
@@ -15,7 +15,8 @@ interface StoryProps {
 const FriendStory = (Props: StoryProps) => {
 
   return (
-    <Link to={{pathname: `/storys/${Props.storyHref}`}}>
+    <Div >
+      <Link className='link' to={{ pathname: `/storys/${Props.storyHref}` }}>
         <StorySt {...Props} storyImage={Props.storyImage}>
           <UserImageSt>
             <img src={Props.storyPerfilImage} alt={Props.storyPerfilImageAlt} />
@@ -24,8 +25,8 @@ const FriendStory = (Props: StoryProps) => {
             <p>{Props.storyPerfilName}</p>
           </UsernameSt>
         </StorySt>
-    </Link>
-
+      </Link>
+    </Div>
   )
 }
 

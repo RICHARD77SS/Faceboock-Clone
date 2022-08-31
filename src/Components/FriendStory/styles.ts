@@ -1,9 +1,15 @@
 import Styled from 'styled-components';
 
-interface Props{
+interface Props {
   storyImage?: string;
 }
 
+export const Div = Styled.div`
+  .link {
+    text-decoration: none;
+  }
+  
+`
 export const StorySt = Styled.div<Props>`
   width: 120px;
   height: 200px;

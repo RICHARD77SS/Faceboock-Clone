@@ -14,6 +14,7 @@ export const ModalSalaContentSt = Styled.div`
   width: 500px;
   height: 350px;
   padding: 1rem;
+  border-radius: 5px;
   background: ${Props => Props.theme.colors.background};
   box-shadow: 0 0 3px 1px rgba(0,0,0,0.4);
   position: fixed;
@@ -129,6 +130,6 @@ export const IconSt = Styled.div`
   align-items: center;
   justify-content: center; 
   font-size: 2rem;
-  margin-right: 6.5rem; 
+  margin-right: 12rem; 
   color: #C850C0;
 `

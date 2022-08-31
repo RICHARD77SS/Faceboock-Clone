@@ -85,42 +85,6 @@ export const SalaBottomSt = Styled(SalaCenterSt)`
     }
   }
 `
-export const SalaFlexSt = Styled.div`
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  padding: .4rem;
-  cursor: pointer;
-  :hover {
-    background: ${Props => Props.theme.colors.hover};
-    transition: all .3s;
-  }
-  .bg {
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #eee;
-    font-size: 1.3rem;
-    color: #eee000;
-    margin: 0 .3rem;
-  }
-  .bg.clock{
-    color: #000;
-  }
-  .left-ico {
-    font-size: 1.6rem;
-    margin-left: 15rem;
-    color: ${Props => Props.theme.colors.text};
-  }
-  .left-ico.top{
-    margin-left: 15.6rem;
-  }
-`
 export const SalaBlockSt = Styled.div`
   width: auto;
   height: auto;

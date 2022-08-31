@@ -8,6 +8,7 @@ import Tela from './Components/Tela'
 import Main from './Components/Main';
 import ModalAddStory from './Components/ModalAddStory';
 import ModalReels from './Components/ModalReels';
+import ViewStorys from './Components/ViewStorys';
 
 import usePersistedState from './utils/usePersistedState';
 import NavMore from './Components/NavMore';
@@ -31,9 +32,10 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/story/' element={<ModalAddStory />} />
+          <Route path='/storys/view' element={<ViewStorys />} />
           <Route path='/reels/' element={<ModalReels />} />
           <Route path='/bookmarks' element={<NavMore />} />
-          
+
         </Routes>
       </div>
     </ThemeProvider>

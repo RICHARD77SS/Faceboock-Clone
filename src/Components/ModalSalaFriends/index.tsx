@@ -2,7 +2,7 @@ import React from 'react';
 
 import { RiVideoAddFill } from 'react-icons/ri';
 
-import { ModalSalaSt, ModalSalaContentSt, ModalSt, SalaTopSt, SalaBottomSt, SalaCenterSt, SalaFlexSt, SalaBlockSt, IconSt } from './styles';
+import { ModalSalaSt, ModalSalaContentSt, ModalSt, SalaTopSt, SalaBottomSt, SalaCenterSt, SalaBlockSt, IconSt } from './styles';
 
 import Button from '../Button';
 
@@ -30,7 +30,6 @@ const ModalSalaFriends = (Props:ModalProps) => {
             <h3>{Props.salaUserFirstName} {Props.salaUserLastName}</h3>
           </SalaCenterSt>
           <SalaBottomSt>
-
             <Button className='btn-criar'>
               <div className="ico">
                 <RiVideoAddFill />

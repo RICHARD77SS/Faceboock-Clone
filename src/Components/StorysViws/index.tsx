@@ -16,6 +16,7 @@ const StorysViws = () => {
               storyPerfilImage={Infos.storyPerfilImage}
               storyPerfilImageAlt={Infos.storyPerfilImageAlt}
               storyPerfilName={Infos.storyPerfilName}
+              storyHref={Infos.storyHref}
             />
           </>
         )
