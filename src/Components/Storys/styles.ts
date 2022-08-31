@@ -11,21 +11,13 @@ export const StorysSt = Styled.div`
   scroll-snap-type: mandatory;
   background: ${Props => Props.theme.colors.background};
   ::-webkit-scrollbar {
-  width: 12px;
-  border-radius: 20px;
   display: none;
-  
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
   display: none;
 }
-
 ::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 20px;
-  border: 1px solid #fff;
   display: none;
 }
   .btn {

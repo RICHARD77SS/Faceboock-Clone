@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "salaName": "",
+    "salaUserFirstName": "Richard",
+    "salaUserLastName": "Silva",
+    "salaUserImg": "https://img.freepik.com/fotos-gratis/diversos-amigos-estudantes-atiram_53876-47012.jpg?w=826&t=st=1661944145~exp=1661944745~hmac=b7eed994c99768da24ca4d99cd51230e45dc9c1dd5a44da3b50888b74c7880c2",
+    "salaUserImgAlt": "Sala name here"
+  },
+  {
+    "id": 2,
+    "salaName": "Sala name here",
+    "salaUserImg": "https://img.freepik.com/fotos-gratis/diversos-amigos-estudantes-atiram_53876-47012.jpg?w=826&t=st=1661944145~exp=1661944745~hmac=b7eed994c99768da24ca4d99cd51230e45dc9c1dd5a44da3b50888b74c7880c2",
+    "salaUserImgAlt": "Sala name here"
+  },
+  {
+    "id": 3,
+    "salaName": "Sala name here",
+    "salaUserImg": "https://img.freepik.com/fotos-gratis/diversos-amigos-estudantes-atiram_53876-47012.jpg?w=826&t=st=1661944145~exp=1661944745~hmac=b7eed994c99768da24ca4d99cd51230e45dc9c1dd5a44da3b50888b74c7880c2",
+    "salaUserImgAlt": "Sala name here"
+  }
+]

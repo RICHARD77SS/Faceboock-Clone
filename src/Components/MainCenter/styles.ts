@@ -7,6 +7,7 @@ export const MainCenterSt = Styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-left: -2rem;
   @media (max-width: 1100px){
     margin-left: 15%;
   }

@@ -6,6 +6,7 @@ export const NavMenuSt = Styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 1rem;
   .red {
     fill: #fff000;
     color: #ff0000;

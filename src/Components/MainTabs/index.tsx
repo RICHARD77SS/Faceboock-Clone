@@ -50,7 +50,7 @@ const MainTabs = () => {
   };
   return (
     <MainTabsSt>
-      <Box sx={{width: '100%'}}>
+      <Box sx={{ width: '100%' }}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <Tabs value={value} onChange={handleChange} aria-label='tabs fb'>
             <Tab className='tab' label='Stories' {...a11yProps(0)} />
@@ -66,6 +66,7 @@ const MainTabs = () => {
         </TabPanel>
         <TabPanel value={value} index={2}>
           <Salas />
+
         </TabPanel>
       </Box>
     </MainTabsSt>
