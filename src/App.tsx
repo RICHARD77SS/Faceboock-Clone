@@ -16,6 +16,7 @@ import GlobalStyle from './styles/global';
 import Header from './Components/Header';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
+import Watch from './Components/Watch/index';
 
 const App = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -35,6 +36,9 @@ const App = () => {
           <Route path='/storys/view' element={<ViewStorys />} />
           <Route path='/reels/' element={<ModalReels />} />
           <Route path='/bookmarks' element={<NavMore />} />
+          <Route path='/watch' element={<Watch />}>
+            <Route path='/watch/live' element={<Watch />} />
+          </Route>
 
         </Routes>
       </div>
