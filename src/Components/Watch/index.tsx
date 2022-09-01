@@ -7,7 +7,7 @@ import { IoVideocam } from 'react-icons/io5';
 import { RiClapperboardFill } from 'react-icons/ri';
 import { FaBookmark } from 'react-icons/fa';
 import { WatchSt, WatchLeftSt, WatchRightSt, Flex1St, DivIconSt } from './styles';
-
+import WatchHome from '../WatchHome';
 import Button from '../Button';
 import Input from '../Input';
 
@@ -60,7 +60,7 @@ const Watch = () => {
         </NavLink>
       </WatchLeftSt>
       <WatchRightSt>
-
+        <WatchHome />
       </WatchRightSt>
     </WatchSt>
   )

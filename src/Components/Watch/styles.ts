@@ -108,8 +108,10 @@ export const DivIconSt = Styled.div`
 export const WatchRightSt = Styled.div`
   width: 70%;
   height: 100%;
-  flex-direction: column;
+  display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: flex-start;
+  padding-top: 2rem;
 
 `

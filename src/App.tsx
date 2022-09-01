@@ -36,10 +36,7 @@ const App = () => {
           <Route path='/storys/view' element={<ViewStorys />} />
           <Route path='/reels/' element={<ModalReels />} />
           <Route path='/bookmarks' element={<NavMore />} />
-          <Route path='/watch' element={<Watch />}>
-            <Route path='/watch/live' element={<Watch />} />
-          </Route>
-
+          <Route path='/watch' element={<Watch />}/>
         </Routes>
       </div>
     </ThemeProvider>
