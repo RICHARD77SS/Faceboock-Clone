@@ -79,6 +79,7 @@ export const Flex2St = Styled.div`
   }
   .btn.icoc{
     color: #F7B928;
+    font-size: 1.7rem;
   }
   p{
     margin: .5rem;

@@ -7,15 +7,8 @@ export const NavMenuSt = Styled.ul`
   align-items: center;
   justify-content: space-between;
   margin-right: 1rem;
-  .red {
-    fill: #fff000;
-    color: #ff0000;
-  }
-  .blue {
-    fill: #00ffff;
-  }
   .btn-game{
-    width: 100px;
+    width: 120px;
     @media (max-width: 1100px) {
       display: none;
     }
@@ -28,7 +21,34 @@ export const NavMenuSt = Styled.ul`
     justify-content: flex-start;
     padding-left: 1.5rem;
   }
-
+  .navlink {
+    fill: #444;
+  }
+  .navlink .icon {
+    display: none;
+  }
+  .navlink.active .svg-1{
+    display: none;
+  }
+  
+  .navlink.active .icon {
+    display: block;
+    font-size: 1.9rem;
+    color: ${Props => Props.theme.colors.primary};
+    fill: ${Props => Props.theme.colors.primary};
+  }
+  .navlink.active .bar-bottom {
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: ${Props => Props.theme.colors.primary};
+    @media(max-width: 1100px){
+    width: 100px;
+    display: flex;
+  }
+    @media(max-width: 768px){
+    width: 70px;
+  }
 `
 export const NavMoreSt = Styled.div`
   width: 100px;
@@ -41,7 +61,7 @@ export const NavMoreSt = Styled.div`
   font-size: 1.8rem;
   font-weight: 700;
   .btn-more {
-    width: 100px;
+    width: 120px;
     min-width: 60px;
     height: 50px;
     border-radius: 10px;
@@ -49,16 +69,17 @@ export const NavMoreSt = Styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   :hover {
     background: ${Props => Props.theme.colors.secundary};
   }
   @media(max-width: 1100px){
-    width: 80px;
+    width: 100px;
     display: flex;
   }
   @media(max-width: 768px){
-    width: 70px
+    width: 70px;
   }
   @media(max-width: 700px){
     transform: translatex(3rem);
@@ -79,10 +100,10 @@ export const ListSt = Styled.li`
     background: ${Props => Props.theme.colors.secundary};
   }
   @media (max-width: 1100px) {
-    width: 80px;
+    width: 100px;
   }
   @media(max-width: 768px){
-    width: 70px
+    width: 70px;
   }
   @media (max-width: 700px){
     display: none;

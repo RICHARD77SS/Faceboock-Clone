@@ -28,13 +28,13 @@ export const MenuSt = Styled.div`
   }
 `
 export const MenuContentSt = Styled.div`
-  width: 580px;
+  width: 600px;
   height: 550px;
   background: ${Props => Props.theme.colors.secundary};
   position: absolute;
   z-index: 999;
   top: 4rem;
-  left: 55%;
+  right: 1rem;
   border-radius: 10px;
   padding: 1rem;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.28);
@@ -59,14 +59,14 @@ export const MenuBlockSt = Styled.ul`
 `
 export const TopBarSt = Styled.ul`
   width: 100%;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
   background: ${Props => Props.theme.colors.secundary};
   border-radius: 10px;
   h2{
+    font-size: 1.5rem;
     width: fit-content;
   }
 `
@@ -82,6 +82,9 @@ export const UlSt = Styled.ul`
   justify-content: left;
   overflow-y: scroll;
   background: ${Props => Props.theme.colors.background};
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
   .input-search {
     width: 90%;
     height: 40px !important;
@@ -106,37 +109,43 @@ export const UlSt = Styled.ul`
   }
 `
 export const ListSt = Styled.li`
-  width: 100%;
+  width: 98%;
   height: 70px;
   display: flex;
   align-items: start;
   padding: .5rem;
+  margin: .5rem;
   font-size: .9rem;
   font-weight: 600;
   cursor: pointer;
-  background: ${Props => Props.theme.colors.background};
   color: ${Props => Props.theme.colors.text};
+  background: ${Props => Props.theme.colors.background};
   &:hover {
     background: ${Props => Props.theme.colors.hover};
     border-radius: 10px;
   }
-  img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    margin: 0 .5rem;
-  }
-  .hr {
-  }
+
 `
 export const ListBlock = Styled.div`
   width: auto;
   height: auto;
   display: flex;
+  align-items: start;
+  text-align: left;
   flex-direction: column;
   p{
     font-size: .8rem;
     font-weight: 400;
     margin: 0;
   }
+`
+export const ImageConteiner = Styled.div`
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .5rem;
+
 `

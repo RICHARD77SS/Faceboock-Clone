@@ -1,4 +1,3 @@
-
 import Styled from 'styled-components';
 
 export const ModalSt = Styled.div`
@@ -104,6 +103,15 @@ export const ModalAddStoryTopNavSt = Styled.div`
     justify-content: center;
     :hover{
       background: ${Props => Props.theme.colors.hover};
+    }
+  }
+  .btn-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 `

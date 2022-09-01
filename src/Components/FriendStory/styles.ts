@@ -53,4 +53,9 @@ export const UsernameSt = Styled.div`
   height: auto;
   color: #fff;
   border-radius: 10px;
+  .username {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
 `

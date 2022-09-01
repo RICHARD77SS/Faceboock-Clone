@@ -22,7 +22,7 @@ const FriendStory = (Props: StoryProps) => {
             <img src={Props.storyPerfilImage} alt={Props.storyPerfilImageAlt} />
           </UserImageSt>
           <UsernameSt>
-            <p>{Props.storyPerfilName}</p>
+            <p className='username'>{Props.storyPerfilName}</p>
           </UsernameSt>
         </StorySt>
       </Link>

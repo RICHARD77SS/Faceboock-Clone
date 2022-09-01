@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 
-export const NavRightSt = Styled.ul`
+export const NavRightSt = Styled.div`
   min-width: 200px;
   height: 60px;
   display: flex;
@@ -17,16 +17,16 @@ export const NavRightSt = Styled.ul`
     position: fixed;
     z-index: 101;
   }
-  .main-menu {
+  .btn-nav.menu {
     @media (max-width: 1100px) {
       display: none;
     }
   }
-  .main-criar {
+  .btn-nav.main-criar {
     display: none;
     @media (max-width: 1100px) {
       display: flex;
-      
+      font-size: 1.8rem;
     }
   }
   .btn-criar {
@@ -35,20 +35,27 @@ export const NavRightSt = Styled.ul`
     align-items: center;
     justify-content: center;
   }
+  .btn-nav {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    list-style-type: none;
+    background: ${Props => Props.theme.colors.secundary};
+  :hover {
+    background:  ${Props => Props.theme.colors.hover};
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
+  }
 `
 export const ListSt = Styled.li`
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  list-style-type: none;
-  background: ${Props => Props.theme.colors.secundary};
-  cursor: pointer;
-  :hover {
-  background:  ${Props => Props.theme.colors.hover};
-  }
+  
   .image {
     min-width: 40px;
     min-height: 40px;

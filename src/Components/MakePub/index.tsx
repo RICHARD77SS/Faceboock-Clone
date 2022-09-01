@@ -6,7 +6,7 @@ import { BiWorld } from 'react-icons/bi';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { HiFlag } from 'react-icons/hi';
-import { MdOutlineEmojiEmotions, MdPhotoLibrary } from 'react-icons/md';
+import { MdOutlineEmojiEmotions, MdPhotoLibrary, MdInsertEmoticon } from 'react-icons/md';
 import { FaUserTag, FaMapMarkerAlt } from 'react-icons/fa';
 import { BsEmojiSmile } from 'react-icons/bs';
 
@@ -17,7 +17,7 @@ import Input from '../Input';
 import Button from '../Button';
 import VideoLiveIcon from '../VideoLive-Icon';
 import FotoVideoPostIcon from '../FotoVideoPostIcon';
-import SentimentoAtividade from '../Sentimento/atividade'
+
 
 
 export const MakePub = () => {
@@ -69,7 +69,7 @@ export const MakePub = () => {
       <Flex2St>
         <Button className='btn icoa'><VideoLiveIcon /><p>Video ao vivo</p></Button>
         <Button className='btn icob'><FotoVideoPostIcon /><p>Foto/ Video</p></Button>
-        <Button className='btn icoc'><SentimentoAtividade /><p>Sentimento / Atividade</p></Button>
+        <Button className='btn icoc'><MdInsertEmoticon /><p>Sentimento/Atividade</p></Button>
       </Flex2St>
     </MakePubSt>
   )

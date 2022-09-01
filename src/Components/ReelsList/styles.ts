@@ -12,14 +12,10 @@ export const ReelsListSt = Styled.div`
   background: ${Props => Props.theme.colors.background};
   ::-webkit-scrollbar {
   display: none;
-  
 }
-
 ::-webkit-scrollbar-track {
-  
   display: none;
 }
-
 ::-webkit-scrollbar-thumb {
   display: none;
 }

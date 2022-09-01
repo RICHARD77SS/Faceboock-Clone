@@ -10,6 +10,7 @@ import Menu from '../Menu';
 import Notification from '../Notification';
 import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
+import ContaModal from '../Conta';
 
 import { ModalSt, ModalLeftSt, ModalRightSt, FlexSt, ModalAddStoryTopNavSt, ModalAddStoryBlockSt, ModalAddStoryFlexSt } from './styles';
 import Config from '../Config';
@@ -18,7 +19,10 @@ const ModalAddStory = () => {
   const [openNotification, setOpenNotification] = React.useState(false);
   const toggleNotification = () => {
     setOpenNotification(openNotification === true ? false : true);
-
+  }
+  const [openConta, setOpenConta] = React.useState(false);
+  const toggleConta = () => {
+    setOpenConta(openConta === true ? false : true);
   }
  const [config, setConfig] = React.useState(false)
   return (
@@ -67,7 +71,17 @@ const ModalAddStory = () => {
               </>
               : null}
             
-            <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
+            <Tooltip title='Conta'>
+                <Button className='btn-img' onClick={() => toggleConta()}>
+                  <img src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t1.6435-9/120923170_1006167356475369_7354394842471469497_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Pyp9kDCjpVgAX93LRRR&tn=GQbFix6_80bH1mDo&_nc_ht=scontent.fcgh2-1.fna&oh=00_AT-Pg3h2TmGfm4KcKlbb1sQnOqJ6qIPAAlbLM0MCA2Ihaw&oe=6317C312" alt="" />
+                </Button>
+            </Tooltip>
+            {openConta ?
+              <>
+                <Button className='bd' onClick={() => setOpenConta(false)}></Button>
+                <ContaModal />
+              </>
+              : null}
           </ModalAddStoryTopNavSt>
           <ModalAddStoryFlexSt>
             <MakeTextStory />
