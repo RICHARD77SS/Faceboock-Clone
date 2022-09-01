@@ -39,5 +39,6 @@ export const StorysSt = Styled.div`
   }
   .btn.prev{
     transform: translatex(-1rem);
+    z-index: 9;
   }
 `

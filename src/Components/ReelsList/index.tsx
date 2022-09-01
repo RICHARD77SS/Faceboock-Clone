@@ -4,7 +4,6 @@ import { GrPrevious, GrNext } from 'react-icons/gr'
 import { ReelsListSt } from './styles';
 import ReelsViw from '../ReelsViw';
 
-
 import Button from '../Button';
 
 

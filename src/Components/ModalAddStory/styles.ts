@@ -46,6 +46,7 @@ export const FlexSt = Styled.div`
   width: 100%;
   height: 60px;
   display: flex;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 2px;
   border-radius: 10px;
@@ -67,9 +68,9 @@ export const FlexSt = Styled.div`
     }
   }
   img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
     margin-right: 1rem;
   }
   p {
@@ -84,6 +85,26 @@ export const ModalAddStoryTopNavSt = Styled.div`
   justify-content: flex-end;
   img {
     border-radius: 40px;
+  }
+  .bd {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 101;
+  }
+  .btn-notification {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover{
+      background: ${Props => Props.theme.colors.hover};
+    }
   }
 `
 export const ModalAddStoryBlockSt = Styled.div`

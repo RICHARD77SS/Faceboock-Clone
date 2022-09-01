@@ -13,7 +13,7 @@ export const MenuSt = Styled.div`
     font-size: 1.8rem;
     font-weight: 700;
     cursor: pointer;
-    color: ${Props => Props.theme.colors.text};
+    color: #000;
     :hover {
       background: ${Props => Props.theme.colors.hover};
     }

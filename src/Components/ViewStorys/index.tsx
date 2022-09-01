@@ -1,12 +1,8 @@
 import React from 'react';
-import Tooltip from '@mui/material/Tooltip';
-import { BsFillGearFill } from 'react-icons/bs'
 import Button from '../Button';
 import Hr from '../Hr';
 import Logo from '../Logo';
-import MakeTextStory from '../MakeTextStory';
-import MakePhotoStory from '../MakePhotoStory';
-import Menu from '../Menu';
+
 import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 

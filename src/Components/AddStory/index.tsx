@@ -14,11 +14,11 @@ const AddStory = () => {
         <Button >
           <StorySt>
           
+              <p>Criar story</p>
             <Button className='bt-add'>
               <div className="div-ico">
                 +
               </div>
-              <p>Criar story</p>
             </Button>
           </StorySt>
         </Button>

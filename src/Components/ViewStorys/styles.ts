@@ -38,6 +38,7 @@ export const ModalLeftSt = Styled.div`
   }
   .make {
     margin: 1.5rem 0;
+    cursor: pointer;
   }
   h4 {
     margin-left: 1rem;
@@ -50,7 +51,7 @@ export const ModalLeftSt = Styled.div`
 export const ModalRightSt = Styled.div`
   width: 75%;
   height: 100%;
-  background: #000};
+  background: #000;
   padding: 1rem;
   display: flex;
   align-items: center;
