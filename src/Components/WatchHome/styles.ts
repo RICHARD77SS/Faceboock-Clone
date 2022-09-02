@@ -43,13 +43,16 @@ export const Block1St = Styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
-  .P {
-    height: 20px;
-    width: 120px;
-    font-size: .8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding-left: 1rem;
+`
+export const DivSt = Styled.div`
+  height: 20px;
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bi {
+    margin-left: .5rem;
   }
 `
 export const PostContentSt = Styled.div`

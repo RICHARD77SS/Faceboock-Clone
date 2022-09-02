@@ -8,7 +8,7 @@ import { RiShareForwardLine } from 'react-icons/ri';
 import { BiLike, BiBookmarkAlt, BiRadioCircleMarked } from 'react-icons/bi';
 import { BsEmojiSmile, BsCamera } from 'react-icons/bs';
 import { MdOutlineGif } from 'react-icons/md';
-import { WatchPostSt, PostTopSt, Flex1St, Block1St, PostContentSt, PostBottomSt, InsertsSt, InputsSt, PostCommentSt } from './styles';
+import { WatchPostSt, PostTopSt, Flex1St, Block1St, PostContentSt, PostBottomSt, InsertsSt, InputsSt, PostCommentSt, DivSt } from './styles';
 import Input from '../Input';
 import Button from '../Button';
 
@@ -21,7 +21,7 @@ const WatchHome = () => {
           <img src="https://img.freepik.com/psd-gratuitas/uau-efeito-de-texto-em-quadrinhos_125540-1674.jpg?w=740&t=st=1662062785~exp=1662063385~hmac=c0b6949075dca0983a97fd417c31e3e5f26063d771ef9848e64c39134701ce88" alt="" />
           <Block1St>
             <h4>Username <a href="/">Seguir</a> </h4>
-            <div className="p">12 de agosto <BiWorld /></div>
+            <DivSt>12 de agosto <BiWorld className='bi' /></DivSt>
           </Block1St>
           <Button className="btn-config"><FiMoreHorizontal /></Button>
         </Flex1St>

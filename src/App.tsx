@@ -17,6 +17,8 @@ import Header from './Components/Header';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import Watch from './Components/Watch/index';
+import WatchHome from './Components/WatchHome';
+import WatchLive from './Components/WatchLive';
 
 const App = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -36,7 +38,10 @@ const App = () => {
           <Route path='/storys/view' element={<ViewStorys />} />
           <Route path='/reels/' element={<ModalReels />} />
           <Route path='/bookmarks' element={<NavMore />} />
-          <Route path='/watch' element={<Watch />}/>
+          <Route path='/watch/' element={<Watch />}>
+            <Route path=":home" element={<WatchHome />} />
+            <Route path="live:live" element={<WatchLive />} />
+          </Route>
         </Routes>
       </div>
     </ThemeProvider>

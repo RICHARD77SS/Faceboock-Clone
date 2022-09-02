@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 
 import { BsFillGearFill } from 'react-icons/bs';
 import { IoVideocam } from 'react-icons/io5';
 import { RiClapperboardFill } from 'react-icons/ri';
 import { FaBookmark } from 'react-icons/fa';
 import { WatchSt, WatchLeftSt, WatchRightSt, Flex1St, DivIconSt } from './styles';
-import WatchHome from '../WatchHome';
 import Button from '../Button';
 import Input from '../Input';
 
@@ -22,7 +21,7 @@ const Watch = () => {
           </Button>
         </Flex1St>
         <Input placeholder='  Pesquisar videos' />
-        <NavLink className='navlink' to='/watch'>
+        <NavLink className='navlink' to='/watch/:home'>
           <Button>
             <DivIconSt className='link-1'>
               <svg className='icon' viewBox="0 0 28 28" height="28" width="28">
@@ -33,7 +32,7 @@ const Watch = () => {
             <p>Página inicial</p>
           </Button>
         </NavLink>
-        <NavLink className='navlink' to='/watch/live'>
+        <NavLink className='navlink' to={`/watch/live:live`}>
           <Button >
             <DivIconSt className='link-2'>
               <IoVideocam className='icon' />
@@ -44,7 +43,7 @@ const Watch = () => {
         <NavLink className='navlink' to='/watch/shows'>
           <Button >
             <DivIconSt className='link-3'>
-              <RiClapperboardFill className='icon'/>
+              <RiClapperboardFill className='icon' />
             </DivIconSt>
             <p>Programas</p>
           </Button>
@@ -60,7 +59,7 @@ const Watch = () => {
         </NavLink>
       </WatchLeftSt>
       <WatchRightSt>
-        <WatchHome />
+        <Outlet />
       </WatchRightSt>
     </WatchSt>
   )
