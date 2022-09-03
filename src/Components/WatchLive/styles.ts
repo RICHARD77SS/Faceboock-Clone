@@ -9,6 +9,7 @@ export const LiveViewSt = Styled.div`
   width: 100%;
   height: 500px;
   border-radius: 5px;
+  margin-top: 2rem;
   background: ${Props => Props.theme.colors.background};
 `
 export const LiveTopSt = Styled.div`

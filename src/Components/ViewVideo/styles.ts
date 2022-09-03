@@ -95,7 +95,6 @@ export const PostBottomSt = Styled.div`
       margin-right: 1rem;
     }
   }
-
 `
 export const PostCommentSt = Styled.div`
   width: 500px;

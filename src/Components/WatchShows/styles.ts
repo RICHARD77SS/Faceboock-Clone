@@ -8,6 +8,7 @@ export const WatchShowsSt = Styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
+  padding-top: 2rem;  
 `
 
 export const FollowsShowsSt = Styled.div`
