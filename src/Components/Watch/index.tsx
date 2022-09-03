@@ -40,7 +40,7 @@ const Watch = () => {
             <p>Ao vivo</p>
           </Button>
         </NavLink>
-        <NavLink className='navlink' to='/watch/shows'>
+        <NavLink className='navlink' to='/watch/shows:shows'>
           <Button >
             <DivIconSt className='link-3'>
               <RiClapperboardFill className='icon' />
@@ -48,7 +48,7 @@ const Watch = () => {
             <p>Programas</p>
           </Button>
         </NavLink>
-        <NavLink className='navlink' to='/watch/saved'>
+        <NavLink className='navlink' to='/watch/saved:saved'>
           <Button >
             <DivIconSt className='link-4
           '>

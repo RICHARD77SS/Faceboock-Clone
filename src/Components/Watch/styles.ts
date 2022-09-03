@@ -11,7 +11,7 @@ export const WatchSt = Styled.div`
   h1 {
     font-size: 1.5rem;
     color: #000;
-    margin-right: 7rem;
+    margin-right: 4rem;
     margin-left: .5rem; 
   }
   .btn-config {
@@ -28,7 +28,7 @@ export const WatchSt = Styled.div`
 `
 
 export const WatchLeftSt = Styled.div`
-  width: 400px;
+  width: 360px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,11 @@ export const WatchLeftSt = Styled.div`
   justify-content: flex-start;
   padding: .5rem;
   background: ${Props => Props.theme.colors.background};
+  box-shadow: 1px 0 3px 0 rgba(0,0,0,0.1);
+  z-index: 10;
+  @media (max-width: 910px) {
+    display: none;
+  }
   input {
     width: 95%;
     height: 38px;
@@ -45,7 +50,7 @@ export const WatchLeftSt = Styled.div`
     margin-bottom: 1rem;
   }
   button{
-    width: 390px;
+    width: 340px;
     height: 52px;
     border-radius: 10px;
     padding: .5rem;
@@ -106,12 +111,15 @@ export const DivIconSt = Styled.div`
 `
 
 export const WatchRightSt = Styled.div`
-  width: 70%;
+  width: 72.5%;
   height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 2rem;
+  padding-top: .5rem;
+  @media (max-width: 910px) {
+    width: 100%;
+  }
 
 `

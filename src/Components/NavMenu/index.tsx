@@ -29,7 +29,7 @@ const NavMenu = () => {
           </NavLink>
         </Tooltip>
         <Tooltip title='Watch'>
-          <NavLink className='navlink' to='/watch'>
+          <NavLink className='navlink' to='/watch/:home'>
             <ListSt>
 
               <svg className='svg-1' viewBox="0 0 28 28" height="28" width="28">
