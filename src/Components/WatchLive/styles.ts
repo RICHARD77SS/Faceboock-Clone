@@ -2,7 +2,7 @@ import Styled from 'styled-components';
 
 export const WatchLiveSt = Styled.div`
   width: 95%;
-  height: 100%;
+  height: auto;
 `
 
 export const LiveViewSt = Styled.div`

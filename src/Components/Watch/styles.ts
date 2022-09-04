@@ -6,7 +6,7 @@ export const WatchSt = Styled.div`
   padding-top: 3rem;
   display: flex;
   align-items: start;
-  justify-content: flex-start;
+  justify-content: flex-end;
   background: ${Props => Props.theme.colors.secundary};
   h1 {
     font-size: 1.5rem;
@@ -26,7 +26,15 @@ export const WatchSt = Styled.div`
     background: ${Props => Props.theme.colors.hover};
   }
 `
-
+export const WatchLeftSat = Styled.div`
+  min-width: 360px;
+  height: 300%;
+  display: flex;
+  background: ${Props => Props.theme.colors.background};
+  @media (max-width: 910px) {
+    display: none;
+  }
+`
 export const WatchLeftSt = Styled.div`
   width: 360px;
   height: 100%;
@@ -35,9 +43,10 @@ export const WatchLeftSt = Styled.div`
   align-items: center;
   justify-content: flex-start;
   padding: .5rem;
-  background: ${Props => Props.theme.colors.background};
   box-shadow: 1px 0 3px 0 rgba(0,0,0,0.1);
   z-index: 10;
+  position: fixed;
+  left: 0;
   @media (max-width: 910px) {
     display: none;
   }
@@ -111,7 +120,7 @@ export const DivIconSt = Styled.div`
 `
 
 export const WatchRightSt = Styled.div`
-  width: 72.5%;
+  max-width: 72.5%;
   height: 100%;
   display: flex;
   align-items: center;

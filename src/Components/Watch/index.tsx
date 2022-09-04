@@ -6,13 +6,16 @@ import { BsFillGearFill } from 'react-icons/bs';
 import { IoVideocam } from 'react-icons/io5';
 import { RiClapperboardFill } from 'react-icons/ri';
 import { FaBookmark } from 'react-icons/fa';
-import { WatchSt, WatchLeftSt, WatchRightSt, Flex1St, DivIconSt } from './styles';
+import { WatchSt, WatchLeftSt, WatchRightSt, Flex1St, DivIconSt, WatchLeftSat } from './styles';
 import Button from '../Button';
 import Input from '../Input';
 
 const Watch = () => {
   return (
     <WatchSt>
+      <WatchLeftSat>
+        
+      </WatchLeftSat>
       <WatchLeftSt>
         <Flex1St>
           <h1>Watch</h1>
@@ -58,9 +61,8 @@ const Watch = () => {
           </Button>
         </NavLink>
       </WatchLeftSt>
-      <WatchRightSt>
-        <Outlet />
-      </WatchRightSt>
+      <Outlet />
+      
     </WatchSt>
   )
 }
