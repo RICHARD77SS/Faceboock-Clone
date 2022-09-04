@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const WatchPostSt = Styled.div`
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 5px;
   display: flex;
@@ -9,6 +9,9 @@ export const WatchPostSt = Styled.div`
   flex-direction: column;
   background: ${Props => Props.theme.colors.background};
   margin-top: 1rem;
+  @media (max-width: 910px){
+    width: 90%;
+  }
 `
 
 export const PostTopSt = Styled.div`

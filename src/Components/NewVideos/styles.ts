@@ -1,7 +1,8 @@
 import Styled from 'styled-components';
 
 export const NewVideosSt = Styled.div`
-  width: 80%;
+  width: 100%;
+  min-width: 380px;
   min-height: 135px;
   text-align: left;
   background: ${Props => Props.theme.colors.background};
@@ -12,6 +13,9 @@ export const NewVideosSt = Styled.div`
     font-size: 1.3rem;
     color: #000;
   }
+  @media (max-width: 910px){
+    width: 90%;
+  }
 `
 export const FlexVideosSt = Styled.div`
   width: 100%;
@@ -19,9 +23,11 @@ export const FlexVideosSt = Styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x:  scroll;
   .video-link {
-    width: 48%;
-    height: 70px;
+    width: 45%;
+    min-width: 380px;
+    min-height: 75px;
     border-radius: 5px;
     padding: .5rem;
     display: flex;

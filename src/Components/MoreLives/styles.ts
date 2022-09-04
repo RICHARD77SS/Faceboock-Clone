@@ -1,13 +1,15 @@
 import Styled from 'styled-components';
 
 export const MoreLivesSt = Styled.div`
-  width: 100%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
   margin-top: 6.5rem;
+  margin-left: auto;
+  margin-right: auto;
 `
 export const Block1St = Styled.div`
   width: 100%;

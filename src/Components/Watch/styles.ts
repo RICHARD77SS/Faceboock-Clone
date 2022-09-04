@@ -28,6 +28,7 @@ export const WatchSt = Styled.div`
 `
 export const WatchLeftSat = Styled.div`
   min-width: 360px;
+  max-width: 360px;
   height: 300%;
   display: flex;
   background: ${Props => Props.theme.colors.background};
@@ -47,6 +48,7 @@ export const WatchLeftSt = Styled.div`
   z-index: 10;
   position: fixed;
   left: 0;
+  background: ${Props => Props.theme.colors.background};
   @media (max-width: 910px) {
     display: none;
   }

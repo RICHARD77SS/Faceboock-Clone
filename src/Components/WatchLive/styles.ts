@@ -1,15 +1,18 @@
 import Styled from 'styled-components';
 
 export const WatchLiveSt = Styled.div`
-  width: 95%;
+  width: 100%;
   height: auto;
+  margin: 0 auto;
 `
 
 export const LiveViewSt = Styled.div`
-  width: 100%;
+  width: 90%;
   height: 500px;
   border-radius: 5px;
   margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   background: ${Props => Props.theme.colors.background};
 `
 export const LiveTopSt = Styled.div`

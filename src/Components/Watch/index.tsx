@@ -6,7 +6,7 @@ import { BsFillGearFill } from 'react-icons/bs';
 import { IoVideocam } from 'react-icons/io5';
 import { RiClapperboardFill } from 'react-icons/ri';
 import { FaBookmark } from 'react-icons/fa';
-import { WatchSt, WatchLeftSt, WatchRightSt, Flex1St, DivIconSt, WatchLeftSat } from './styles';
+import { WatchSt, WatchLeftSt, Flex1St, DivIconSt, WatchLeftSat } from './styles';
 import Button from '../Button';
 import Input from '../Input';
 
