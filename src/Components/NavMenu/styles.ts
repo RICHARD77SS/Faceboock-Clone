@@ -7,6 +7,9 @@ export const NavMenuSt = Styled.ul`
   align-items: center;
   justify-content: space-between;
   margin-right: 1rem;
+  .navlink.list-more {
+      display: none;
+    }
   .btn-game{
     width: 120px;
     @media (max-width: 1100px) {
@@ -16,6 +19,9 @@ export const NavMenuSt = Styled.ul`
   @media (max-width: 1100px) {
     width: 40%;
     transform: translatex(-2rem);
+    .navlink.list-more {
+      display: flex;
+    }
   }
   @media (max-width: 700px){
     justify-content: flex-start;
@@ -50,6 +56,7 @@ export const NavMenuSt = Styled.ul`
     width: 70px;
   }
 `
+
 export const NavMoreSt = Styled.div`
   width: 100px;
   min-width: 50px;

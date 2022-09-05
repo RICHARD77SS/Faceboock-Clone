@@ -1,21 +1,17 @@
 import React from 'react';
 
-import { WatchShowsSt, FollowsShowsSt, FacebookShowsSt, ShowCardSt } from './styles';
-
-import Button from '../Button';
+import { WatchShowsSt, FollowsShowsSt, FacebookShowsSt } from './styles';
+import FacebookShows from '../FacebookShows';
 
 const WhatchShows = () => {
   return (
     <WatchShowsSt>
       <h3>Programas que os amigos estão seguindo</h3>
       <FollowsShowsSt>
-        <Button>
-          <ShowCardSt />
-        </Button>
       </FollowsShowsSt>
       <h3>Conteúdo original do Facebook</h3>
       <FacebookShowsSt>
-        <ShowCardSt />
+        <FacebookShows />
       </FacebookShowsSt>
     </WatchShowsSt>
   )

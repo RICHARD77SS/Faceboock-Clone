@@ -79,8 +79,8 @@ const NavMenu = () => {
           </NavLink>
         </Tooltip>
         <Tooltip title='Maiss'>
-          <NavLink className='navlink' to={to}>
-            <ListSt>
+          <NavLink className='navlink list-more' to={to}>
+            <ListSt >
               <NavMoreSt>
                 <Button className='btn-more' onClick={() => toggleMore()}>
                   <AiOutlineMenu className='ico-more' />
