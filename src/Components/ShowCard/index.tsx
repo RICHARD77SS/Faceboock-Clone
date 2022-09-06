@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ShowCardSt, CardModalSt } from './styles';
+import { ShowCardSt, CardModalSt, ContainerSt } from './styles';
 
 import Button from '../Button';
 
@@ -14,21 +14,24 @@ interface PropsCard {
 }
 const ShowCard = (Props: PropsCard) => {
   return (
-    <>
-      <ShowCardSt {...Props} >
+    <ContainerSt>
+      <ShowCardSt className='s-cards' {...Props} >
         <img src={Props.cardBackground} alt='' className="child" />
         
-        <CardModalSt className='card-modal'>
+      </ShowCardSt>
+      <CardModalSt className='card-modal'>
+        <div className="flex">
           <p>{Props.cardModalFollows} seguidores</p>
           <p>{Props.cardTemporadas} Temporada</p>
           <p>{Props.cardEpisodios} episódios</p>
+
+        </div>
           <h3>{Props.cardModalTitle}</h3>
           <span>{Props.cardModalDescription}</span>
 
           <Button>Assistir agora</Button>
-        </CardModalSt>
-      </ShowCardSt>
-    </>
+      </CardModalSt>
+    </ContainerSt>
   )
 }
 

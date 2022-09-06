@@ -1,12 +1,13 @@
 import React from 'react';
 
-import ShowCard from '../ShowCard';
-import FacebookInfo from './FacebookInfos.json';
 
-const FacebookShows = () => {
+import ShowCard from '../ShowCard';
+import FriendsInfos from './FriendsInfos.json';
+
+const FriendsShows = () => {
   return (
     <>
-      {FacebookInfo.map((Infos) => {
+      {FriendsInfos.map((Infos) => {
         return (
           <ShowCard cardBackground={Infos.cardBackground}
             cardTemporadas={Infos.cardTemporadas}
@@ -22,4 +23,4 @@ const FacebookShows = () => {
   )
 }
 
-export default FacebookShows;
+export default FriendsShows;
