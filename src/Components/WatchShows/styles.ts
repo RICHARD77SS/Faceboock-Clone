@@ -1,4 +1,13 @@
 import Styled from 'styled-components';
+export const Container = Styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  .topnav {
+    transform: translatey(.5rem);
+  }
+`
 
 export const WatchShowsSt = Styled.div`
   width: 90%;
@@ -16,7 +25,7 @@ export const WatchShowsSt = Styled.div`
     color: #000;
     font-weight: 700;
   }
-`
+  `
 export const FollowsShowsSt = Styled.div`
   width: 100%;
   height: auto;

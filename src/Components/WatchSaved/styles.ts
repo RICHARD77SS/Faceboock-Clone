@@ -6,6 +6,10 @@ export const WatchSavedSt = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  .topnav {
+    transform: translatey(.5rem);
+    box-shadow: none;
+  }
 `
 
 export const SavedTopSt = Styled.div`

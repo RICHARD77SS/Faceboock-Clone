@@ -4,9 +4,12 @@ import { WatchSavedSt, SavedTopSt, SavedCenterSt, SavedContentSt,VideoSt, BlockS
 import { AiFillLike, AiFillHeart } from 'react-icons/ai';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import Button from '../Button';
+import WatchTopNav from '../WatchTopNav';
+
 const WatchSaved = () => {
   return (
     <WatchSavedSt>
+      <WatchTopNav className='topnav'/>
       <SavedTopSt>
         <p>Watch &gt; Salvos</p>
         <h3>Vídeos salvos</h3>

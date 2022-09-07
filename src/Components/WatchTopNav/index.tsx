@@ -8,14 +8,22 @@ import { NavLink } from 'react-router-dom';
 import { WatchTopNavSt, MoreWrapper } from './styles';
 import Button from '../Button';
 
-const WatchTopNav = () => {
+interface TopNavProps {
+  className?: string;
+}
+
+
+const WatchTopNav = (Props:TopNavProps) => {
 
   const [more, setMore] = React.useState(false)
   const moreToggle = () => {
     setMore(more === true ? false : true)
   }
+
+  const [follows, setFollows] = React.useState(false)
+
   return (
-    <WatchTopNavSt>
+    <WatchTopNavSt {...Props}>
       <h3>Watch</h3>
       <NavLink className='navlink' to='/watch/:home'>
         Página inicial
@@ -57,6 +65,10 @@ const WatchTopNav = () => {
           </Button>
         </MoreWrapper> 
         : null}
+      {follows ? 
+        <>
+        </>
+        :null}
     </WatchTopNavSt>
   )
 }

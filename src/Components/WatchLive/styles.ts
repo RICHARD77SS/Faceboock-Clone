@@ -4,6 +4,9 @@ export const WatchLiveSt = Styled.div`
   width: 100%;
   height: auto;
   margin: 0 auto;
+  .topnav {
+    transform: translatey(.5rem);
+  }
 `
 
 export const LiveViewSt = Styled.div`
@@ -14,6 +17,9 @@ export const LiveViewSt = Styled.div`
   margin-left: auto;
   margin-right: auto;
   background: ${Props => Props.theme.colors.background};
+  @media (max-width: 910px) {
+    margin-top: 0;
+  }
 `
 export const LiveTopSt = Styled.div`
   width: 100%;

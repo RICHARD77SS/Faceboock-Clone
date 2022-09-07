@@ -12,11 +12,12 @@ import { MdOutlineGif } from 'react-icons/md';
 
 import { WatchLiveSt, LiveViewSt, LiveTopSt, LiveContentSt, LiveBottomSt, BlockSt, LiveViewBottomSt, PostCommentSt, InputsSt, InsertsSt } from './styles';
 import MoreLives from '../MoreLives';
-
+import WatchTopNav from '../WatchTopNav';
 export const WatchLive = () => {
   const [comment, setComment] = React.useState(false);
   return(
     <WatchLiveSt>
+      <WatchTopNav className='topnav'/>
       <LiveViewSt>
         <LiveTopSt>
           <Button>
