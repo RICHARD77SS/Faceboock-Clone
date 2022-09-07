@@ -82,6 +82,16 @@ export const WatchTopNavSt = Styled.div`
       display: none;
     }
   }
+  .container-close {
+    height: 700px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(255,255,255,0.4);
+  }
 `
 
 export const MoreWrapper = Styled.div`

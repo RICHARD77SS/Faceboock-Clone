@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { AiOutlineClose } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai'
 import { FiMoreHorizontal } from 'react-icons/fi'
 
@@ -7,13 +8,14 @@ import { NavLink } from 'react-router-dom';
 
 import { WatchTopNavSt, MoreWrapper } from './styles';
 import Button from '../Button';
+import WatchFollows from '../WatchFollows';
 
 interface TopNavProps {
   className?: string;
 }
 
 
-const WatchTopNav = (Props:TopNavProps) => {
+const WatchTopNav = (Props: TopNavProps) => {
 
   const [more, setMore] = React.useState(false)
   const moreToggle = () => {
@@ -40,16 +42,16 @@ const WatchTopNav = (Props:TopNavProps) => {
       <NavLink className='navlink save' to='/watch/saved:saved'>
         Videos salvos
       </NavLink>
-      <Button className='navlink follow' >
+      <Button onClick={() => { setFollows(true) }} className='navlink follow' >
         Seguindo
       </Button>
       <Button className='search' >
         <AiOutlineSearch />
       </Button>
-      <Button onClick={()=>{moreToggle()}} className='more'>
+      <Button onClick={() => { moreToggle() }} className='more'>
         <FiMoreHorizontal />
       </Button>
-      {more ? 
+      {more ?
         <MoreWrapper>
           <NavLink className='programs' to='/watch/shows:shows'>
             Programas
@@ -63,12 +65,20 @@ const WatchTopNav = (Props:TopNavProps) => {
           <Button className='follow' >
             Seguindo
           </Button>
-        </MoreWrapper> 
+        </MoreWrapper>
         : null}
-      {follows ? 
+      {follows ?
         <>
+
+          <WatchFollows>
+            <Button onClick={() => setFollows(false)} className='button-close'>
+              <AiOutlineClose />
+            </Button>
+          </WatchFollows>
+          <Button className='container-close' onClick={() => setFollows(false)} >
+          </Button>
         </>
-        :null}
+        : null}
     </WatchTopNavSt>
   )
 }
