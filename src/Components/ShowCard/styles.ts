@@ -2,9 +2,10 @@ import Styled from 'styled-components';
 
 
 export const ShowCardSt = Styled.div`
-  width: 200px;
-  height: 200px;
-  margin: .1rem;
+  width: 178px;
+  height: 178px;
+  margin: .25rem;
+  border-radius: 5px;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -36,8 +37,9 @@ export const ContainerSt = Styled.div`
   display: flex;
   flex-wrap: wrap;
   :hover .card-modal {
-    transition: .5s;
-    display: flex;
+    transition: all 1s;
+    visibility: visible;
+    opacity: 1;
   }
   
 `
@@ -45,9 +47,13 @@ export const CardModalSt = Styled.div`
   width: 400px;
   height: auto;
   border-radius: 5px;
-  display: none;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0, opacity 1s ease-in;
   flex-direction: column;
   position: absolute;
+  transform: translatey(-3.5rem);
   z-index: 10;
   padding: 1rem;
   padding-top: .5rem;

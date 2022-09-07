@@ -120,17 +120,3 @@ export const DivIconSt = Styled.div`
     fill: #fff;
   }
 `
-
-export const WatchRightSt = Styled.div`
-  max-width: 72.5%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: .5rem;
-  @media (max-width: 910px) {
-    width: 100%;
-  }
-
-`

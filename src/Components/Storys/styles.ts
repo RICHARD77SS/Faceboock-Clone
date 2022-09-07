@@ -8,7 +8,7 @@ export const StorysSt = Styled.div`
   justify-content: flex-start;
   overflow-x: scroll;
   overflow-y: hidden;
-  scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
   background: ${Props => Props.theme.colors.background};
   ::-webkit-scrollbar {
   display: none;

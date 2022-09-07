@@ -14,7 +14,6 @@ const Watch = () => {
   return (
     <WatchSt>
       <WatchLeftSat>
-        
       </WatchLeftSat>
       <WatchLeftSt>
         <Flex1St>
@@ -61,8 +60,7 @@ const Watch = () => {
           </Button>
         </NavLink>
       </WatchLeftSt>
-      <Outlet />
-      
+        <Outlet />
     </WatchSt>
   )
 }

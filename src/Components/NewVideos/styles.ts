@@ -16,6 +16,27 @@ export const NewVideosSt = Styled.div`
   @media (max-width: 910px){
     width: 90%;
   }
+  .btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: ${Props => Props.theme.colors.secundary};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
+    :hover {
+      background: ${Props => Props.theme.colors.hover};
+    }
+  }
+  .btn.next{
+    right: 4%;
+  }
+  .btn.prev{
+    transform: translatex(-2rem);
+    z-index: 9;
+  }
 `
 export const FlexVideosSt = Styled.div`
   width: 100%;
@@ -24,8 +45,19 @@ export const FlexVideosSt = Styled.div`
   align-items: center;
   justify-content: space-between;
   overflow-x:  scroll;
+  overflow-y: hidden;
+  ::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+}
   .video-link {
-    width: 45%;
+    width: 50%;
     min-width: 380px;
     min-height: 75px;
     border-radius: 5px;
@@ -33,6 +65,7 @@ export const FlexVideosSt = Styled.div`
     display: flex;
     align-items: center;
     justify-content: Flex-start;
+    margin-right: 1rem;
     :hover {
       background: ${Props => Props.theme.colors.hover};
     }
@@ -52,8 +85,8 @@ export const FlexVideosSt = Styled.div`
     display: none;
     align-items:center;
     justify-content: center;
-    position: absolute;
-    margin-left: 30%;
+    position: relative;
+    transform: translatex(40%);
     :hover {
       background: #eee;
     }

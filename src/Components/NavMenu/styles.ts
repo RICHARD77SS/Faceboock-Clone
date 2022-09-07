@@ -36,7 +36,6 @@ export const NavMenuSt = Styled.ul`
   .navlink.active .svg-1{
     display: none;
   }
-  
   .navlink.active .icon {
     display: block;
     font-size: 1.9rem;
@@ -52,9 +51,13 @@ export const NavMenuSt = Styled.ul`
     width: 100px;
     display: flex;
   }
-    @media(max-width: 768px){
+    @media(max-width: 900px){
     width: 70px;
   }
+  @media (max-width: 700px){
+    display: none;
+  }
+}
 `
 
 export const NavMoreSt = Styled.div`
@@ -109,7 +112,7 @@ export const ListSt = Styled.li`
   @media (max-width: 1100px) {
     width: 100px;
   }
-  @media(max-width: 768px){
+  @media(max-width: 900px){
     width: 70px;
   }
   @media (max-width: 700px){
