@@ -97,7 +97,19 @@ export const WatchLeftSt = Styled.div`
   .navlink.active .link-4 {
     background: #F7B928;
   }
-  
+  .close-config {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    :hover {
+      background: transparent;
+    }
+  }
 `
 
 export const Flex1St = Styled.div`

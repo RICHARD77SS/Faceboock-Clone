@@ -9,8 +9,10 @@ import { FaBookmark } from 'react-icons/fa';
 import { WatchSt, WatchLeftSt, Flex1St, DivIconSt, WatchLeftSat } from './styles';
 import Button from '../Button';
 import Input from '../Input';
+import WatchConfig from '../WatchConfig';
 
 const Watch = () => {
+  const[config, setConfig] = React.useState(false)
   return (
     <WatchSt>
       <WatchLeftSat>
@@ -18,9 +20,15 @@ const Watch = () => {
       <WatchLeftSt>
         <Flex1St>
           <h1>Watch</h1>
-          <Button className='btn-config'>
+          <Button onClick={() => setConfig(true)} className='btn-config'>
             <BsFillGearFill />
           </Button>
+          {config ?
+            <>
+              <WatchConfig />
+              <Button onClick={() => setConfig(false)} className='close-config'></Button>
+            </>
+            : null}
         </Flex1St>
         <Input placeholder='  Pesquisar videos' />
         <NavLink className='navlink' to='/watch/:home'>
