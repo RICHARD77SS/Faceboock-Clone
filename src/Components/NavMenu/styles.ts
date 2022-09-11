@@ -117,5 +117,9 @@ export const ListSt = Styled.li`
   }
   @media (max-width: 700px){
     display: none;
+    :last-child{
+      display:flex;
+      width: 60px;
+    }
   }
 `

@@ -1,19 +1,28 @@
 import Styled from 'styled-components';
 
 export const MarketplaceSt = Styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
 
 `
+export const Left = Styled.div`
+  min-width: 360px;
+  height: 100vh;
+  @media (max-width: 900px) {
+    display: none;
+  }
+`
+
 export const MarketLeftSt = Styled.div`
-  width: 350px;
-  height: auto;
+  width: 360px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 4rem;
   background: ${Props => Props.theme.colors.background};
+  position: fixed;
   .navlink {
     display: flex;
     align-items: center;
@@ -27,6 +36,22 @@ export const MarketLeftSt = Styled.div`
       background: ${Props => Props.theme.colors.hover};
     }
   }
+  nav::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  nav::-webkit-scrollbar-track {
+    background:  rgba(255, 255, 255);
+  }
+
+  nav::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 1px solid rgba(241, 241, 241, 0.72);
+  }
+  @media (max-width: 900px) {
+    display: none;
+  }
 
 `
 export const Navbar = Styled.nav`
@@ -38,16 +63,18 @@ export const Navbar = Styled.nav`
   padding: .5rem;
   margin-top: 6rem;
   background: ${Props => Props.theme.colors.background};
+ 
   overflow-y: scroll;
+  .categories {
+    transform: translatex(-7rem);
+    margin-bottom: .5rem;
+  }
   .arrowright {
     margin-left: 12rem;
   }
   .arrowright.b {
     margin-left: 12.7rem;
   }
-  ::-webkit-scrollbar {
-    width: 12px;
-}
   .addClass {
     width: 100%;
     min-height: 38px;
@@ -147,10 +174,18 @@ export const IconDivSt = Styled.div`
   margin: 0 .5rem;
 `
 export const MarketRightSt = Styled.div`
-  width: 70%;
+  width: 72%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-top: 4rem;
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+  
 `
 
 

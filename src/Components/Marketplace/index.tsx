@@ -2,7 +2,7 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 
-import { MarketplaceSt, MarketLeftSt, Header, Navbar, Filtros, MarketRightSt, MarketFlexSt, IconDivSt } from './styles';
+import { MarketplaceSt, MarketLeftSt, Header, Navbar, Filtros,Left, MarketRightSt, MarketFlexSt, IconDivSt } from './styles';
 import { BsCameraReelsFill, BsFillGearFill, BsFillInboxFill, BsHouseDoorFill, BsShop, BsTagFill } from 'react-icons/bs';
 import { SiFacebooklive } from 'react-icons/si';
 
@@ -16,11 +16,13 @@ import { HiShoppingBag } from 'react-icons/hi';
 import { AiFillCar, AiFillHeart, AiOutlineRight } from 'react-icons/ai';
 import { GiFrogFoot, GiHouse, GiRetroController, GiRun, GiSmartphone, GiSpanner } from 'react-icons/gi';
 import { FaGuitar, FaPenAlt, FaTshirt, FaUtensilSpoon } from 'react-icons/fa';
+import AllProducts from '../MarketAll';
 
 const Marketplace = () => {
   const [config, setConfig] = React.useState(false)
   return (
     <MarketplaceSt>
+      <Left></Left>
       <MarketLeftSt>
         <Header>
           <MarketFlexSt>
@@ -82,7 +84,7 @@ const Marketplace = () => {
             <Button>Filtername here</Button>
             <Hr />
           </Filtros>
-          <h4>Categorias</h4>
+          <h4 className='categories'>Categorias</h4>
           <NavLink className='navlink' to='/marketplace/'>
             <IconDivSt>
               <AiFillCar />
@@ -200,7 +202,7 @@ const Marketplace = () => {
         </Navbar>
       </MarketLeftSt>
       <MarketRightSt>
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <AllProducts />
       </MarketRightSt>
     </MarketplaceSt>
   )
