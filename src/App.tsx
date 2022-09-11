@@ -21,6 +21,7 @@ import WatchHome from './Components/WatchHome';
 import WatchLive from './Components/WatchLive';
 import WatchShows from './Components/WatchShows';
 import WatchSaved from './Components/WatchSaved';
+import Marketplace from './Components/Marketplace';
 
 const App = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -40,6 +41,7 @@ const App = () => {
           <Route path='/storys/view' element={<ViewStorys />} />
           <Route path='/reels/' element={<ModalReels />} />
           <Route path='/bookmarks' element={<NavMore />} />
+          <Route path='/marketplace' element={<Marketplace />} />
           <Route path='/watch/' element={<Watch />}>
             <Route path=":home" element={<WatchHome />} />
             <Route path="live:live" element={<WatchLive />} />
