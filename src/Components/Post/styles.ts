@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const PostSt = Styled.div`
-  width: 500px;
+  width: 100%;
   height: auto;
   border-radius: 5px;
   display: flex;

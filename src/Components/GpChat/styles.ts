@@ -6,7 +6,6 @@ export const GpChatSt = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
   .bt-user {
     width: 100%;
     height: auto;

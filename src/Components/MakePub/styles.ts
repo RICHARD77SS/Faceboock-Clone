@@ -1,7 +1,8 @@
 import Styled from 'styled-components';
 
 export const MakePubSt = Styled.div`
-  width: 500px;
+  width: 75%;
+  min-width: 500px;
   height: 120px;
   display: flex;
   flex-direction: column;

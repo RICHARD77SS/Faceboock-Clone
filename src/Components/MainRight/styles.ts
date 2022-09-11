@@ -1,26 +1,54 @@
 import Styled from 'styled-components';
 
 export const MainRightSt = Styled.div`
-  width: 300px;
-  height: 100%;
+  width: 25%;
+  max-width: 380px;
+  min-width: 300px;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: end;
   flex-direction: column;
-  justify-content: center;
-
+  justify-content: flex-start;
+  position: fixed;
+  right: 0;
   .hr {
     width: 85%;
     margin-top: 1rem;
-    height:.5px;
+    height: 1px;
     background: ${Props => Props.theme.colors.text};
     opacity: 0.3;
   }
   @media(max-width: 900px) {
     display: none;
   }
+  ul::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ul::-webkit-scrollbar-track {
+    background:  ${Props => Props.theme.colors.secundary};
+  }
+
+  ul::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 1px solid rgba(241, 241, 241, 0.72);
+  }
 `
+export const Ul = Styled.ul`
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  padding: 1rem;
+  padding-bottom: 4rem;
+`
+
 export const GruposSt = Styled.div`
-  width: 250px;
+  width: 90%;
   height: auto;
   display: flex;
   align-items: center;

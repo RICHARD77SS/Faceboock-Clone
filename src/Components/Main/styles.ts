@@ -5,5 +5,8 @@ export const MainSt = Styled.div`
   height: 100%;
   display: flex;
   padding-top: 4rem;
-  justify-content: space-between;
+  justify-content:center;
+  @media (max-width: 1100px){
+    justify-content: flex-start;
+  }
 `

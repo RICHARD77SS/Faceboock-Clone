@@ -1,7 +1,8 @@
 import Styled from 'styled-components'
 
 export const MainTabsSt = Styled.div`
-  width: 500px;
+  width: 75%;
+  min-width: 500px;
   height: auto;
   border-radius: 10px;
   background: ${Props => Props.theme.colors.background};

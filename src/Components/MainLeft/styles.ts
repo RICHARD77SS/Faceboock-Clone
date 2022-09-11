@@ -2,89 +2,64 @@ import Styled from 'styled-components';
 
 export const MainLeftSt = Styled.div`
   width: 25%;
+  max-width: 350px;
   height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  position: fixed;
+  left: 0;
   @media (max-width: 1100px) {
     display: none;
   }
-  
-`
-export const AtalhosSt = Styled.div`
-  width: 100%;
-  height: auto;
-  padding: 1.5rem;
-  .seus-atalhos {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: ${Props => Props.theme.colors.text};
-    opacity: .8;
+  ul::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ul::-webkit-scrollbar-track {
+    background:  ${Props => Props.theme.colors.secundary};
+  }
+
+  ul::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 1px solid rgba(241, 241, 241, 0.72);
+  }
+  @media (max-width: 900px) {
+    display: none;
   }
 `
-export const UlSt = Styled.ul`
+export const Ul = Styled.ul`
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: left;
-  .accordion{
-    background: ${Props => Props.theme.colors.secundary};
-    border: none;
-    box-shadow: none;
-    padding: 0;
-  }
-  .accordion-summary {
-    margin: 0;
-    margin-left: -2rem;
-    padding: 0;
-    padding-right: 12rem;
-    padding-left: 1rem;
-  }
-  .exicon{
+  overflow-y: scroll; 
+  overflow-x: hidden;
+  padding-bottom: 4rem;
+  .viewMore{
+    width: 100%;
+    border-radius: 10px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+    padding: 0 1rem;
+    &:hover {
     background: ${Props => Props.theme.colors.hover};
-    border-radius: 20px;
-    opacity: 0.7;
-    position: absolute;
-    margin-left: -6rem;
-    transform: translatey(-.8rem);
-  }
-  .typ {
-    margin-left: 2.5rem;
-    font-size: .9rem;
-    font-weight: 700;
-    color: ${Props => Props.theme.colors.text};
-  }
-  .accordion-details {
-    padding: 0;
-    margin-bottom: 4rem;
-  }
-  .accordion-summary {
-    border-radius: 10px;
-  }
-  .accordion-summary.Mui-expanded {
-    padding-left: 1rem;
-    width: 275px;
-    border-radius: 10px;
-    position: absolute;
-    transform: translatey(850px);
-  }
-  .accordion-summary:hover{
-      background: ${Props => Props.theme.colors.hover};
     }
-  .accordion.Mui-expanded {
-    margin-left: -3.5rem;
+    p{
+      margin-left: 1rem;
+    }
   }
-  .Mui-expanded {
-    margin: 0;
-  }
-  
 `
-export const ListSt = Styled.li`
+export const List = Styled.li`
   width: 100%;
-  height: 45px;
+  min-height: 45px;
   display: flex;
   align-items: center;
   padding: 0 .5rem;
@@ -103,4 +78,16 @@ export const ListSt = Styled.li`
     margin: 0 .5rem;
   }
   
+`
+export const AtalhosSt = Styled.div`
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  border-top: .5px solid rgba(0,0,0,0.2);
+  .seus-atalhos {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: ${Props => Props.theme.colors.text};
+    opacity: .8;
+  }
 `

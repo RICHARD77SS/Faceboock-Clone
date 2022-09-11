@@ -6,7 +6,7 @@ export const ContatosSt = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  border-bottom: .5px solid rgba(0,0,0,0.2);
 `
 export const FlexSt = Styled.div`
   width: 100%;

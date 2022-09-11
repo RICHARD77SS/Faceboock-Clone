@@ -6,7 +6,8 @@ export const PatrocSt = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 1rem;
+  margin: 1rem;
+  border-top: .5px solid rgba(0,0,0,0.2);
   h4 {
     margin: 1rem .5rem;
   }
