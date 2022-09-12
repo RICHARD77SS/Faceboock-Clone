@@ -36,9 +36,18 @@ export const SalasSt = Styled.div`
     }
   }
   .btn.next{
-    transform: translatex(26rem);
+    right: 32.5%;
+    @media (max-width: 1600px){
+      right: 30%;
+    }
+    @media (max-width: 1100px){
+      right: 34%;
+    }
+    @media (max-width: 900px){
+      right: 11%;
+    }
   }
   .btn.prev{
-    transform: translatex(-1rem);
+    transform: translatex(-.9rem);
   }
 `

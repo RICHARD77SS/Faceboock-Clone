@@ -29,9 +29,9 @@ const Storys = () => {
       </Button>
       <AddStory />
       <StorysViws />
-        <Button className='btn next' onClick={()=>{goLeft()}}>
-          <GrNext size='20' />
-        </Button>
+      <Button className='btn next' onClick={()=>{goLeft()}}>
+         <GrNext size='20' />
+      </Button>
     </StorysSt>
   )
 }

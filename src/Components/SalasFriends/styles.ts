@@ -17,6 +17,7 @@ export const SalasSt = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: .5rem;
   border-radius: 5px;
   margin: 0 .3rem;

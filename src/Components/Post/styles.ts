@@ -45,7 +45,7 @@ export const PostHeaderSt = Styled.div`
   }
 `
 export const ImageSt = Styled.div`
-  width: 500px;
+  width: 100%;
   height: 500px;
   background: ${Props => Props.theme.colors.hover};
   @media (max-width: 520px) {

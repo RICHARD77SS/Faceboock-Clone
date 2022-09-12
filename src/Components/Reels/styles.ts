@@ -9,7 +9,7 @@ export const ReelsSt = Styled.div`
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.1);
-  
+  z-index: 10;
   img {
     width: 100%;
     height: 100%;
@@ -18,6 +18,7 @@ export const ReelsSt = Styled.div`
   }
   :hover {
     filter: brightness(90%);
+    z-index: 10;
   }
 `
 export const UsernameSt = Styled.div`

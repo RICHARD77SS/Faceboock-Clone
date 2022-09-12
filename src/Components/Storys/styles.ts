@@ -21,7 +21,7 @@ export const StorysSt = Styled.div`
   display: none;
 }
   .btn {
-    position: absolute;
+    position:absolute;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -30,15 +30,24 @@ export const StorysSt = Styled.div`
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
+    z-index: 100;
     :hover {
       background: ${Props => Props.theme.colors.hover};
     }
   }
   .btn.next{
-    transform: translatex(26rem);
+    right: 32.5%;
+    @media (max-width: 1600px){
+      right: 30%;
+    }
+    @media (max-width: 1100px){
+      right: 34%;
+    }
+    @media (max-width: 900px){
+      right: 11%;
+    }
   }
   .btn.prev{
-    transform: translatex(-1rem);
-    z-index: 9;
+    transform: translatex(-.9rem);
   }
 `
