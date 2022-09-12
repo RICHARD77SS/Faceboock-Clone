@@ -8,7 +8,7 @@ export const NavbarSt = Styled.div`
   display: flex;
   align-items: center;
   padding: 0 .8rem;
-  justify-content: space-between;
+  justify-content: center;
   background: ${Props => Props.theme.colors.background};
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
   `

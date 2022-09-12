@@ -16,7 +16,6 @@ const NavMenu = () => {
   const to = (more === true ? '/' : '/bookmarks')
   return (
     <>
-
       <NavMenuSt>
         <Tooltip title='Página inicial'>
           <NavLink className='navlink' to='/'>
@@ -80,13 +79,11 @@ const NavMenu = () => {
         </Tooltip>
         <Tooltip title='Maiss'>
           <NavLink className='navlink list-more' to={to}>
-            <ListSt >
               <NavMoreSt>
                 <Button className='btn-more' onClick={() => toggleMore()}>
                   <AiOutlineMenu className='ico-more' />
                 </Button>
               </NavMoreSt>
-            </ListSt>
           </NavLink>
         </Tooltip>
       </NavMenuSt>

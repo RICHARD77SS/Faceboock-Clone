@@ -5,7 +5,8 @@ export const NavLeftSt = Styled.ul`
   height: 60px;
   display: flex;
   align-items: center;
-
+  position: fixed;
+  left: 1px;
 `
 export const ListSt = Styled.li`
   width: 30px;
@@ -38,6 +39,7 @@ export const ListSt = Styled.li`
         border: none;
         width: 240px;
         outline: none;
+        
       }
     }
     @media (max-width: 768px) {

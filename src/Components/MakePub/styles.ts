@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const MakePubSt = Styled.div`
-  width: 75%;
+  width: 100%;
   min-width: 500px;
   height: 120px;
   display: flex;

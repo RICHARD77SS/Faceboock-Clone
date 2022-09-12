@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { MainLeftSt, Ul, List, AtalhosSt } from './styles';
-import Button from '../Button';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+
+import Button from '../Button';
 
 const MainLeft = () => {
 

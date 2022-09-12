@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const NavMenuSt = Styled.ul`
-  width: 45%;
+  width: 40%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -58,6 +58,9 @@ export const NavMenuSt = Styled.ul`
     display: none;
   }
 }
+.list-more {
+  
+}
 `
 
 export const NavMoreSt = Styled.div`
@@ -91,10 +94,6 @@ export const NavMoreSt = Styled.div`
   @media(max-width: 768px){
     width: 70px;
   }
-  @media(max-width: 700px){
-    transform: translatex(3rem);
-  }
-
 `
 export const ListSt = Styled.li`
   width: 120px;

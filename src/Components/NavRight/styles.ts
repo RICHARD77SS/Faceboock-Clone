@@ -6,9 +6,9 @@ export const NavRightSt = Styled.div`
   display: flex;
   align-items: center;
   padding: 0 .5rem;
-  margin-left: 3.8rem;
-  margin-right: -1rem;
   justify-content: space-around;
+  position: fixed;
+  right: .5rem;
   .bd {
     top: 0;
     right: 0;

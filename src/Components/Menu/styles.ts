@@ -147,5 +147,8 @@ export const ImageConteiner = Styled.div`
   align-items: center;
   justify-content: center;
   margin-right: .5rem;
-
+  img {
+    min-width: 30px;
+    height: 30px;
+  }
 `

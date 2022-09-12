@@ -1,7 +1,7 @@
 import Styled from 'styled-components'
 
 export const MainTabsSt = Styled.div`
-  width: 75%;
+  width: 100%;
   min-width: 500px;
   height: auto;
   border-radius: 10px;
