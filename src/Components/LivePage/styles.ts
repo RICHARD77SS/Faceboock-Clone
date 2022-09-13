@@ -7,7 +7,7 @@ export const Wrapper = Styled.div`
   overflow: hidden;
   display: flex;
   align-items: start;
-  padding-top: 3.6rem;
+  justify-content: flex-start;
 `
 export const Live = Styled.div`
   width: 72%;
@@ -75,6 +75,8 @@ export const Reactions = Styled.div`
 export const Sidebar = Styled.div`
   min-width: 360px;
   max-width: 360px;
+  position: absolute;
+  right: 0;
   height: 100vh;
   background: ${Props => Props.theme.colors.background};
 `
@@ -85,7 +87,6 @@ export const Navbar = Styled.nav`
   align-items: center;
   justify-content: flex-end;
   border-bottom: .5px solid rgba(0,0,0,0.2);
-  display: none;
 `
 export const SideHeader = Styled.header`
   width: 100%;

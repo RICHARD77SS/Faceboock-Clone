@@ -1,15 +1,19 @@
 import React from 'react';
 
-import { HeaderSt } from './styles'
+import { HeaderSt, Container } from './styles'
 
 
 import Navbar from '../Navbar'
+import { Outlet } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <HeaderSt>
-      <Navbar />
-    </HeaderSt>
+    <Container>
+      <HeaderSt>
+        <Navbar />
+      </HeaderSt>
+      <Outlet />
+    </Container>
   )
 }
 
