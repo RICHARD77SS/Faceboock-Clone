@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 export const CardLiveSt = Styled.div`
-  min-width: 250px;
+  min-width: 200px;
   max-width: 300px;
   height: auto;
   max-height: 400px;
@@ -109,8 +109,14 @@ export const BlockSt = Styled.div`
   padding-top: 1rem;
   h4 {
     font-weight: 500;
+    :hover {
+      text-decoration: underline;
+    }
   }
   p{
     font-size: .8rem;
+    :hover {
+      text-decoration: underline;
+    }
   }
 `

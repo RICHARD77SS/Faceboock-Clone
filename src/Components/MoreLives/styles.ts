@@ -16,6 +16,7 @@ export const Block1St = Styled.div`
   height: auto;
   display: flex;
   border-radius: 5px;
+  padding: .5rem;
   flex-direction: column;
   align-items: start;
   justify-content: flex-start;
@@ -24,10 +25,17 @@ export const Block1St = Styled.div`
     margin-top: 1rem;
     margin-left: 1rem;
   }
+  .btn-more {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background: #E7F3FF;
+    color: ${Props => Props.theme.colors.primary};
+  }
 `
 
 
-export const ContainerLivesSt = Styled.div`
+export const LiveListSt = Styled.div`
   width: 100%;
   height: auto;
   display: flex;
@@ -37,14 +45,3 @@ export const ContainerLivesSt = Styled.div`
   gap: .5rem;
   padding: .5rem;
 `
-
-
-
-
-
-
-
-
-
-
-
