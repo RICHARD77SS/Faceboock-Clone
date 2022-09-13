@@ -1,33 +1,47 @@
 import React from 'react';
-import { BiNote, BiWorld } from 'react-icons/bi';
+
+import { AiFillMedicineBox, AiOutlineLike, AiOutlineStar, AiOutlineClose } from 'react-icons/ai';
+import { IoIosArrowForward, IoMdArrowDropdown } from 'react-icons/io';
 import { BsBookmarkHeartFill, BsEmojiSmile } from 'react-icons/bs';
+import { RiShareForwardLine } from 'react-icons/ri';
+import { FiMoreHorizontal } from 'react-icons/fi';
+import { BiNote, BiWorld } from 'react-icons/bi';
+import { FaCommentAlt } from 'react-icons/fa';
+import { GoComment } from 'react-icons/go';
+
+import { Wrapper, Live, LiveHeader, LiveIn, VideoContainer, Video, Footer, Reactions, Sidebar, Navbar, SideHeader, UserInfos, Block, Interactions, Icon, TabContainer, TabButtons, TabContent, OverView, Header, Interactionsb, GroupInfos, Subscriber, LiveChat, Comments, Post, BlockMess, Mess, MessInteractions, ChatFooter, HelpOwner, FixedMess, Support, BlockSup, ProgressBar, Icondiv, CommentArea, InputReactions, YourAnswers, MoreLikeThis, VideoItem, Image, Duration, Infos } from './styles';
+import Input from '../Input';
 import Button from '../Button';
 import Logo from '../Logo';
-
-import { } from './styles';
-import { FiMoreHorizontal } from 'react-icons/fi';
-import { GoComment } from 'react-icons/go';
-import { AiFillMedicineBox, AiOutlineLike, AiOutlineStar } from 'react-icons/ai';
-import { RiShareForwardLine } from 'react-icons/ri';
-import { IoIosArrowForward, IoMdArrowDropdown } from 'react-icons/io';
-import Input from '../Input';
-import { FaCommentAlt } from 'react-icons/fa';
-
+import NavRight from '../NavRight';
+import { GrNext, GrPrevious } from 'react-icons/gr';
 
 const LivePage = () => {
+
+  const goLeft = () => {
+    let tabButtons = document.getElementById('tab-buttons');
+    tabButtons!.scrollLeft += 100;
+  }
+  const goRight = () => {
+    let tabButtons = document.getElementById('tab-buttons');
+    tabButtons!.scrollLeft -= 100;
+  }
+
   return (
     <Wrapper>
       <Live>
         <LiveHeader>
           <Button>
-            X
+            <AiOutlineClose />
           </Button>
           <Logo />
           <LiveIn>
 
           </LiveIn>
-        </LiHeader>
-        <Video controler />
+        </LiveHeader>
+        <VideoContainer>
+          <Video src='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' controls />
+        </VideoContainer>
         <Footer>
           <Reactions>
             <img src="https://i.postimg.cc/vmFmxnfs/like.png" alt="Haha Icon by Icon Mafia on IconScout" />
@@ -54,14 +68,14 @@ const LivePage = () => {
       </Live>
       <Sidebar>
         <Navbar>
-
+          <NavRight />
         </Navbar>
         <SideHeader>
           <UserInfos>
-            <img src="" alt="User" />
+            <img src="https://img.freepik.com/fotos-gratis/apta-a-mulher-caucasiana-no-boxe-sportswear-isolado-na-parede-branca-novato-boxeador-caucasiano-feminino-treinando-e-praticando-em-movimento-e-acao-esporte-estilo-de-vida-saudavel-conceito-de-movimento_155003-37780.jpg?w=740&t=st=1663093580~exp=1663094180~hmac=512b2884e6e3fda9d426780cd05efc0ca283c939a581c89caf62f66fd7882963" alt="User" />
             <Block>
               <p><a href="/">UserName</a> está ao vivo agora -- jogando <a href="/">Good of war</a></p>
-              <span>59 min <BiWorld /></span>
+              <span><p>59 min</p><BiWorld /></span>
             </Block>
             <Button><BsBookmarkHeartFill /></Button>
             <Button><FiMoreHorizontal /></Button>
@@ -80,24 +94,30 @@ const LivePage = () => {
             <p>7 comentários</p>
             <p>2 compartilhamentos</p>
           </Interactions>
-          <Button><AiFillMedicineBox />Seguir</Button>
+          <Button className='follow-live'><AiFillMedicineBox size='22' /><p>Seguir</p> </Button>
         </SideHeader>
-        <TabContainer>
-          <TabButtons>
-            <Button>Visão gerel</Button>
-            <Button>Bate-papo ao vivo</Button>
-            <Button>Suas respostas</Button>
-            <Button>Mais como esse</Button>
+        <TabContainer className='tab-container'>
+          <TabButtons id='tab-buttons'>
+            <Button className='btn prev' onClick={() => { goRight() }}>
+              <GrPrevious size='20' />
+            </Button>
+            <Button className='tab-button active' data-id='btn-1'><pre>Visão gerel</pre></Button>
+            <Button className='tab-button' data-id='btn-2'><pre>Bate-papo ao vivo</pre></Button>
+            <Button className='tab-button' data-id='btn-3'><pre>Suas respostas</pre></Button>
+            <Button className='tab-button' data-id='btn-4'><pre>Mais como esse</pre></Button>
+            <Button className='btn next' onClick={() => { goLeft() }}>
+              <GrNext size='20' />
+            </Button>
           </TabButtons>
           <TabContent>
-            <OverView>
+            <OverView id='btn-1' className='content active'>
               <Header>
                 <h3>God of war</h3>
                 <p>God interruptes by giant dragon</p>
-                <Interactions>
+                <Interactionsb>
                   <Button>
                     <AiOutlineLike />
-                    <p>Curtir</p> 
+                    <p>Curtir</p>
                   </Button>
                   <Button>
                     <GoComment />
@@ -108,13 +128,13 @@ const LivePage = () => {
                     <p>Compartilhar</p>
                   </Button>
                   <Button>
-                    <img src="" alt="" />
+                    <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
                     <IoMdArrowDropdown />
                   </Button>
-                </Interactions>
+                </Interactionsb>
               </Header>
               <GroupInfos>
-                <img src="" alt="" />
+                <img src="https://img.freepik.com/vetores-gratis/astronauta-bonito-esfregando-na-ilustracao-do-icone-do-vetor-dos-desenhos-animados-do-controlador-de-jogo-conceito-de-icone-de-recreacao-de-tecnologia-isolado-vetor-premium-estilo-flat-cartoon_138676-3715.jpg?w=740&t=st=1663096121~exp=1663096721~hmac=959fde55fd4b1bdbbbf2dc0945f0387d4ab1c1b31e0f6c572896ded80106aaa9" alt="" />
                 <h3>Hyper Gaming</h3>
                 <p>Welcome Family Of Hyper Gaming</p>
                 <Button>
@@ -122,13 +142,13 @@ const LivePage = () => {
                 </Button>
               </GroupInfos>
               <Subscriber>
-                <img src="" alt="" />
+                <img src="https://i.postimg.cc/gkXRs4ZF/Subs-Gifting-header.png" alt="" />
                 <h3>Benefícios do assinante</h3>
                 <p>Como assinante, você terá acesso exclusivo a vantagens especiais, como um modo de bate-papo somente para assinantes e acess</p>
                 <Button>Assinar</Button>
               </Subscriber>
             </OverView>
-            <LiveChat>
+            <LiveChat id='btn-2' className='content'>
               <Comments>
                 <Post>
                   <img src="" alt="" />
@@ -137,11 +157,11 @@ const LivePage = () => {
                       <h4>Username</h4>
                       <p>comment for this video</p>
                     </Mess>
-                    <MesInteractions>
+                    <MessInteractions>
                       <p>Curtir</p>
                       <p>Responder</p>
                       <p>10 min</p>
-                    </MesInteractions>
+                    </MessInteractions>
                   </BlockMess>
                 </Post>
               </Comments>
@@ -179,11 +199,11 @@ const LivePage = () => {
                 </CommentArea>
               </ChatFooter>
             </LiveChat>
-            <YourAnswers>
+            <YourAnswers id='btn-3' className='content'>
               <FaCommentAlt />
               <p>Os comentários aos quais você respondeu e as respostas aos seus comentários aparecerão aqui</p>
             </YourAnswers>
-            <MoreLikeThis>
+            <MoreLikeThis id='btn-4' className='content'>
               <VideoItem>
                 <Image>
                   <img src="" alt="" />

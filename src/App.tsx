@@ -22,6 +22,7 @@ import WatchLive from './Components/WatchLive';
 import WatchShows from './Components/WatchShows';
 import WatchSaved from './Components/WatchSaved';
 import Marketplace from './Components/Marketplace';
+import LivePage from './Components/LivePage';
 
 const App = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -48,6 +49,7 @@ const App = () => {
             <Route path="shows:shows" element={<WatchShows />} />
             <Route path="saved:saved" element={<WatchSaved />} />
           </Route>
+          <Route path='live' element={<LivePage />} />
         </Routes>
       </div>
     </ThemeProvider>
