@@ -7,15 +7,15 @@ export const Wrapper = Styled.div`
   overflow: hidden;
   display: flex;
   align-items: start;
-  justify-content: flex-start;
+  justify-content: flex-end;
 `
 export const Live = Styled.div`
-  width: 72%;
   height: 100%;
   display: flex;
   align-items: start;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 `
 export const LiveHeader = Styled.header`
   width: 100%;
@@ -73,10 +73,8 @@ export const Reactions = Styled.div`
   }
 `
 export const Sidebar = Styled.div`
-  min-width: 360px;
-  max-width: 360px;
-  position: absolute;
-  right: 0;
+  min-width: 370px;
+  max-width: 370px;
   height: 100vh;
   background: ${Props => Props.theme.colors.background};
 `

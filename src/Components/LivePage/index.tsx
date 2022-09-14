@@ -15,6 +15,7 @@ import Button from '../Button';
 import Logo from '../Logo';
 import NavRight from '../NavRight';
 import { GrNext, GrPrevious } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 const LivePage = () => {
 
@@ -31,9 +32,11 @@ const LivePage = () => {
     <Wrapper>
       <Live>
         <LiveHeader>
-          <Button>
-            <AiOutlineClose />
-          </Button>
+          <Link to='/watch/live:live'>
+            <Button>
+              <AiOutlineClose />
+            </Button>
+          </Link>
           <Logo />
           <LiveIn>
 
