@@ -1,6 +1,30 @@
 import Styled from 'styled-components';
 
+export const Container = Styled.div`
+  width: auto;
+  height: 100vh;
+  
+  .content {
+    display: none;
+  }
+  .content.active {
+    display: flex;
+  }
+  div::-webkit-scrollbar {
+    width: 12px;
+  }
 
+  div::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  div::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 1px solid rgba(241, 241, 241, 0.72);
+  }
+
+`
 export const OverView = Styled.div`
   width: 100%;
   height: 68%;
@@ -13,6 +37,7 @@ export const OverView = Styled.div`
   scrollbar-width: thin;
   padding-bottom: 6rem;
   background: ${Props => Props.theme.colors.secundary};
+
 `
 export const Header = Styled.header`
   width: 100%;

@@ -73,8 +73,8 @@ export const Reactions = Styled.div`
   }
 `
 export const Sidebar = Styled.div`
-  min-width: 370px;
-  max-width: 370px;
+  min-width: 360px;
+  max-width: 360px;
   height: 100vh;
   background: ${Props => Props.theme.colors.background};
 `
@@ -223,19 +223,5 @@ export const TabContent = Styled.div`
   .content.active {
     display: flex;
   }
-
-  div::-webkit-scrollbar {
-  width: 12px;
-}
-
-  div::-webkit-scrollbar-track {
-    background: #fff;
-}
-
-  div::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 20px;
-    border: 1px solid rgba(241, 241, 241, 0.72);
-}
 
 `
