@@ -2,8 +2,9 @@
 import React from 'react'
 
 type Props = {
-  title: string
-  children: React.ReactNode
+  id?: string;
+  title: string;
+  children: React.ReactNode;
 }
 
 

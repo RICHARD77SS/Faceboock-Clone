@@ -34,8 +34,9 @@ export const TabButtons = Styled.ul`
     background: #ccc;
     font-size: 1rem;
     margin: .2rem;
+    border: none;
   }
-  .tab-button.active {
+  .active {
     background: #E7F3FF;
     color: ${Props => Props.theme.colors.primary};
   }

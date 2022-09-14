@@ -13,16 +13,35 @@ type Props = {
 
 const Tabs = (Props: Props) => {
   const [selectedTab, setSelectedTab] = useState(0)
-
+  console.log(selectedTab)
   const goLeft = () => {
     let tabButtons = document.getElementById('tab-buttons');
-    tabButtons!.scrollLeft += 100;
+    tabButtons!.scrollLeft += 150;
   }
   const goRight = () => {
     let tabButtons = document.getElementById('tab-buttons');
-    tabButtons!.scrollLeft -= 100;
+    tabButtons!.scrollLeft -= 150;
   }
-
+  if (selectedTab === 0) {
+    document.querySelector('.Visão')?.classList.add('active')
+  } else {
+    document.querySelector('.Visão')?.classList.remove('active')
+  }
+  if (selectedTab === 1) {
+    document.querySelector('.Bate-papo')?.classList.add('active')
+  } else {
+    document.querySelector('.Bate-papo')?.classList.remove('active')
+  }
+  if (selectedTab === 2) {
+    document.querySelector('.Suas')?.classList.add('active')
+  } else {
+    document.querySelector('.Suas')?.classList.remove('active')
+  }
+  if (selectedTab === 3) {
+    document.querySelector('.Mais')?.classList.add('active')
+  } else {
+    document.querySelector('.Mais')?.classList.remove('active')
+  }
   return (
     <TabContainer>
       <TabButtons id='tab-buttons'>

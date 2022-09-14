@@ -13,9 +13,9 @@ function TabLive() {
   return (
     <Tabs>
       <Tab title="Visão geral"><Overview /></Tab>
-      <Tab title="Bate-papo ao vivo"><LiveChat /></Tab>
+      <Tab id='btn-1' title="Bate-papo ao vivo"><LiveChat /></Tab>
       <Tab title="Suas respostas"><YourAnswers /></Tab>
-      <Tab title="Mais como esse"><MoreLikeThis /></Tab>
+      <Tab  title="Mais como esse"><MoreLikeThis /></Tab>
     </Tabs>
   )
 }

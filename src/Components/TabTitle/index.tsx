@@ -10,7 +10,7 @@ const TabTitle = (Props: Props) => {
 
   return (
     <li>
-      <button onClick={() => Props.setSelectedTab(Props.index)}><pre>{Props.title}</pre></button>
+      <button className={Props.title} onClick={() => Props.setSelectedTab(Props.index)}><pre>{Props.title}</pre></button>
     </li>
   )
 }
