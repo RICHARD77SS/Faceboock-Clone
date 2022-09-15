@@ -132,7 +132,7 @@ export const InteractionData = Styled.div`
 `
 export const SideVideo = Styled.div`
   width: 35%;
-  min-width: 450px
+  min-width: 480px;
   height: 100%;
   padding: 1rem;
   background: ${Props => Props.theme.colors.background};
@@ -233,13 +233,14 @@ export const CommentsFooter = Styled.footer`
   align-items: start;
 `
 export const MakeComment = Styled.div`
-  width: 440px;
+  width: 36%;
+  max-width: 440px;
   height: 50px;
   position: absolute;
   display: flex;
   align-items:center;
   top:37.5rem;
-  background:${Props => Props.theme.colors.background};
+  background: ${Props => Props.theme.colors.background};
   img {
     width: 35px;
     height: 35px;
@@ -247,7 +248,7 @@ export const MakeComment = Styled.div`
     margin-right: .3rem;
   }
   input {
-    width: 380px;
+    width: 90%;
     height: 35px;
     border-radius: 20px;
     background: ${Props => Props.theme.colors.secundary};
@@ -268,6 +269,7 @@ export const InputReactions = Styled.div`
 export const Main = Styled.div`
   width: 100%;
   display: flex;
+
 `
 export const MainContent = Styled.div`
   width: 65%;
@@ -312,21 +314,6 @@ export const More = Styled.div`
     }
   }
 `
-export const Suggests = Styled.div`
-  width: 100%;
-  border-top: .5px solid rgba(0,0,0,0.3);
-`
-export const VideoSuggest = Styled.div`
-
-`
-export const Infos = Styled.div`
-
-`
-export const User = Styled.div`
-
-`
-
-
 export const DivIcon = Styled.div`
   width: 25px;
   height: 24px;

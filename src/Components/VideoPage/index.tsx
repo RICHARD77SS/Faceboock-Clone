@@ -6,7 +6,7 @@ import { BsPlayBtnFill } from 'react-icons/bs';
 import { IoVideocam } from 'react-icons/io5';
 import { AiOutlineClose, AiFillMedicineBox, AiOutlineCamera } from 'react-icons/ai';
 
-import { Wrapper, Header, Left, Right, ContentPage,VideoContent, VideoContainer, Player,Video, VideoFooter, FooterTop, FooterBottom, InteractionData,SideVideo,SideTop,OwnerInfos,UserContainer, ButtonContainer, Block, TopTab, CommentsContainer, Comments, CommentsFooter, MakeComment, InputReactions, DivIcon,Main, MainContent, SideMain, More, Suggests,VideoSuggest, Infos, User } from './styles';
+import { Wrapper, Header, Left, Right, ContentPage,VideoContent, VideoContainer, Player,Video, VideoFooter, FooterTop, FooterBottom, InteractionData,SideVideo,SideTop,OwnerInfos,UserContainer, ButtonContainer, Block, TopTab, CommentsContainer, Comments, CommentsFooter, MakeComment, InputReactions, DivIcon,Main, MainContent, SideMain, More } from './styles';
 import Interaction from '../Interaction';
 import WatchTopNav from '../WatchTopNav';
 import ViewVideo from '../ViewVideo';
@@ -19,6 +19,7 @@ import { RiClapperboardFill } from 'react-icons/ri';
 import { MdOutlineEmojiEmotions, MdOutlineGif } from 'react-icons/md';
 import { GrEmoji } from 'react-icons/gr';
 import { TbNote } from 'react-icons/tb';
+import ListVideoSuggest from '../ListVideoSuggest';
 
 const VideoPage = () => {
   return (
@@ -61,7 +62,7 @@ const VideoPage = () => {
             <SideTop>
               <OwnerInfos>
                 <UserContainer>
-                  <img src="" alt="" />
+                  <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
                   <Block>
                     <h4>User name</h4>
                     <div className='p'> <p>18 de agosto ás 20:00</p>  <BiWorld /> </div>
@@ -88,7 +89,7 @@ const VideoPage = () => {
                   </CommentsFooter>
                 </Comments>
                 <MakeComment>
-                  <img src="" alt="" />
+                  <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
                   <Input placeholder='Escreva um comentário...' />
                   <InputReactions>
                     <DivIcon>
@@ -114,7 +115,7 @@ const VideoPage = () => {
         </VideoContent>
         <Main>
           <MainContent>
-            <ViewVideo userImage='' userImageAlt='' userName='' dataPost='' titlePost='' descriptionPost='' videoPost=''/>
+            <ViewVideo userImage='https://i.postimg.cc/brczWrGr/richardsilva.jpg' userImageAlt='' userName='' dataPost='' titlePost='' descriptionPost='' videoPost=''/>
           </MainContent>
           <SideMain>
             <h3>Explore mais vídeos no Watch</h3>
@@ -132,19 +133,7 @@ const VideoPage = () => {
                 <p>Programas</p>
               </Link>
             </More>
-            <Suggests>
-              <h3>Entretenimento</h3>
-              <VideoSuggest>
-                <img src="" alt="" />
-                <Infos>
-                  <h4>Title</h4>
-                  <User>
-                    <img src="" alt="" />
-                    <p>User name</p>
-                  </User>
-                </Infos>
-              </VideoSuggest>
-            </Suggests>
+            <ListVideoSuggest />
           </SideMain>
         </Main>
       </ContentPage>
