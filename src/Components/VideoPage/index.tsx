@@ -1,17 +1,24 @@
 import React from 'react';
-import Logo from '../Logo';
-import NavRight from '../NavRight';
-import WatchTopNav from '../WatchTopNav';
 import { FiMoreHorizontal } from 'react-icons/fi';
-import Interaction from '../Interaction';
 import { BiWorld } from 'react-icons/bi';
-import Comment from '../Comment';
-import Input from '../Input';
-import ViewVideo from '../ViewVideo';
 import { Link } from 'react-router-dom';
 import { BsPlayBtnFill } from 'react-icons/bs';
 import { IoVideocam } from 'react-icons/io5';
+import { AiOutlineClose, AiFillMedicineBox, AiOutlineCamera } from 'react-icons/ai';
 
+import { Wrapper, Header, Left, Right, ContentPage,VideoContent, VideoContainer, Player,Video, VideoFooter, FooterTop, FooterBottom, InteractionData,SideVideo,SideTop,OwnerInfos,UserContainer, ButtonContainer, Block, TopTab, CommentsContainer, Comments, CommentsFooter, MakeComment, InputReactions, DivIcon,Main, MainContent, SideMain, More, Suggests,VideoSuggest, Infos, User } from './styles';
+import Interaction from '../Interaction';
+import WatchTopNav from '../WatchTopNav';
+import ViewVideo from '../ViewVideo';
+import NavRight from '../NavRight';
+import Comment from '../Comment';
+import Button from '../Button';
+import Input from '../Input';
+import Logo from '../Logo';
+import { RiClapperboardFill } from 'react-icons/ri';
+import { MdOutlineEmojiEmotions, MdOutlineGif } from 'react-icons/md';
+import { GrEmoji } from 'react-icons/gr';
+import { TbNote } from 'react-icons/tb';
 
 const VideoPage = () => {
   return (
@@ -27,7 +34,7 @@ const VideoPage = () => {
           <NavRight />
         </Right>
       </Header>
-      <WatchTopNav />
+      <WatchTopNav className='topnav' />
       <ContentPage>
         <VideoContent>
           <VideoContainer>
@@ -38,13 +45,14 @@ const VideoPage = () => {
               <FooterTop>
                 <h2>Title for this video</h2>
                 <Button><FiMoreHorizontal /></Button>
-              </FootTop>
+              </FooterTop>
               <FooterBottom>
                 <Interaction />
                 <InteractionData>
-                  <p>Friend e outras 74 mil pessoas</p>
+                  <img src="https://i.postimg.cc/vmFmxnfs/like.png" alt="Like Icon by Icon Mafia on IconScout" />
+                  <p>Friend1, Friend2 e outras 74 mil pessoas</p>
                   <p>6,5mil comentários</p>
-                  <p>11 mi visualizações</p>
+                  <span>11 mi visualizações</span>
                 </InteractionData>
               </FooterBottom>
             </VideoFooter>
@@ -52,13 +60,17 @@ const VideoPage = () => {
           <SideVideo>
             <SideTop>
               <OwnerInfos>
-                <img src="" alt="" />
-                <Block>
-                  <h4>User name</h4>
-                  <p>18 de agosto ás 20:00 <BiWorld /> </p>
-                </Block>
-                <Button><AiFillMedicineBox />Seguir</Button>
-                <Buttoon><FiMoreHorizontal /></Buttoon>
+                <UserContainer>
+                  <img src="" alt="" />
+                  <Block>
+                    <h4>User name</h4>
+                    <div className='p'> <p>18 de agosto ás 20:00</p>  <BiWorld /> </div>
+                  </Block>
+                </UserContainer>
+                <ButtonContainer>
+                  <Button><AiFillMedicineBox />Seguir</Button>
+                  <Button><FiMoreHorizontal /></Button>
+                </ButtonContainer>
               </OwnerInfos>
               <TopTab>
                 <Button>Visão geral</Button>
@@ -66,9 +78,12 @@ const VideoPage = () => {
               </TopTab>
               <CommentsContainer>
                 <Comments>
-                  <Comment userImage='' userName='' comment='' dataComment='' />
+                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
+                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
+                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
+                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
                   <CommentsFooter>
-                    <Button>Ver maus comentários</Button>
+                    <Button>Ver mais comentários</Button>
                     <p>2 de 3.477</p>
                   </CommentsFooter>
                 </Comments>
@@ -77,11 +92,23 @@ const VideoPage = () => {
                   <Input placeholder='Escreva um comentário...' />
                   <InputReactions>
                     <DivIcon>
-                      <img src="https://i.postimg.cc/59Hcrkcn/x-G18le-W-h0y.png" alt="" />
+                      <MdOutlineEmojiEmotions />
+                    </DivIcon>
+                    <DivIcon>
+                      <GrEmoji />
+                    </DivIcon>
+                    <DivIcon>
+                      <AiOutlineCamera />
+                    </DivIcon>
+                    <DivIcon>
+                      <MdOutlineGif />
+                    </DivIcon>
+                    <DivIcon>
+                      <TbNote />
                     </DivIcon>
                   </InputReactions>
                 </MakeComment>
-              </CommentsContain>
+              </CommentsContainer>
             </SideTop>
           </SideVideo>
         </VideoContent>
@@ -90,16 +117,17 @@ const VideoPage = () => {
             <ViewVideo userImage='' userImageAlt='' userName='' dataPost='' titlePost='' descriptionPost='' videoPost=''/>
           </MainContent>
           <SideMain>
+            <h3>Explore mais vídeos no Watch</h3>
             <More>
-              <Link to="/watch/home">
+              <Link className='link' to="/watch/home">
                 <BsPlayBtnFill />
                 <p>Página inicial</p>
               </Link>
-              <Link to='/watch/live:live'>
+              <Link className='link' to='/watch/live:live'>
                 <IoVideocam />
                 <p>Ao vivo</p>
               </Link>
-              <Link to='/watch/shows:shows'>
+              <Link className='link' to='/watch/shows:shows'>
                 <RiClapperboardFill />
                 <p>Programas</p>
               </Link>
