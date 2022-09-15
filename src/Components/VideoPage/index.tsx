@@ -4,22 +4,22 @@ import { BiWorld } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { BsPlayBtnFill } from 'react-icons/bs';
 import { IoVideocam } from 'react-icons/io5';
-import { AiOutlineClose, AiFillMedicineBox, AiOutlineCamera } from 'react-icons/ai';
+import { AiOutlineClose, AiFillMedicineBox } from 'react-icons/ai';
 
-import { Wrapper, Header, Left, Right, ContentPage,VideoContent, VideoContainer, Player,Video, VideoFooter, FooterTop, FooterBottom, InteractionData,SideVideo,SideTop,OwnerInfos,UserContainer, ButtonContainer, Block, TopTab, CommentsContainer, Comments, CommentsFooter, MakeComment, InputReactions, DivIcon,Main, MainContent, SideMain, More } from './styles';
+import { Wrapper, Header, Left, Right, ContentPage,VideoContent, VideoContainer, Player,Video, VideoFooter, FooterTop, FooterBottom, InteractionData,SideVideo,SideTop,OwnerInfos,UserContainer, ButtonContainer, Block, TopTab, CommentsContainer, Comments, CommentsFooter,Main, MainContent, SideMain, More } from './styles';
 import Interaction from '../Interaction';
 import WatchTopNav from '../WatchTopNav';
 import ViewVideo from '../ViewVideo';
 import NavRight from '../NavRight';
 import Comment from '../Comment';
 import Button from '../Button';
-import Input from '../Input';
+
 import Logo from '../Logo';
 import { RiClapperboardFill } from 'react-icons/ri';
-import { MdOutlineEmojiEmotions, MdOutlineGif } from 'react-icons/md';
-import { GrEmoji } from 'react-icons/gr';
-import { TbNote } from 'react-icons/tb';
+
+
 import ListVideoSuggest from '../ListVideoSuggest';
+import MakeComments from '../MakeComments';
 
 const VideoPage = () => {
   return (
@@ -88,27 +88,7 @@ const VideoPage = () => {
                     <p>2 de 3.477</p>
                   </CommentsFooter>
                 </Comments>
-                <MakeComment>
-                  <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
-                  <Input placeholder='Escreva um comentário...' />
-                  <InputReactions>
-                    <DivIcon>
-                      <MdOutlineEmojiEmotions />
-                    </DivIcon>
-                    <DivIcon>
-                      <GrEmoji />
-                    </DivIcon>
-                    <DivIcon>
-                      <AiOutlineCamera />
-                    </DivIcon>
-                    <DivIcon>
-                      <MdOutlineGif />
-                    </DivIcon>
-                    <DivIcon>
-                      <TbNote />
-                    </DivIcon>
-                  </InputReactions>
-                </MakeComment>
+                <MakeComments />
               </CommentsContainer>
             </SideTop>
           </SideVideo>
