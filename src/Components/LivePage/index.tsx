@@ -7,11 +7,10 @@ import { BsBookmarkHeartFill } from 'react-icons/bs';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { BiWorld } from 'react-icons/bi';
 
-import { Wrapper, Live, LiveHeader, LiveIn, VideoContainer, Video, Footer, Reactions, Sidebar, Navbar, SideHeader, UserInfos, Block, Interactions, Icon, TabContainer, TabButtons, TabContent } from './styles';
+import { Wrapper, Live, LiveHeader, LiveIn, VideoContainer, Video, Footer, Reactions, Sidebar, Navbar, SideHeader, UserInfos, Block, Interactions, Icon, TabContainer } from './styles';
 import Button from '../Button';
 import Logo from '../Logo';
 import NavRight from '../NavRight';
-import { GrNext, GrPrevious } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import TabLive from '../TabLive';
 

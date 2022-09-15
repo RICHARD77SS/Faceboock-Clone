@@ -9,7 +9,12 @@ export const WatchSavedSt = Styled.div`
   .topnav {
     transform: translatey(.5rem);
     box-shadow: none;
+    display: none;
+    @media (max-width: 910px){
+    display: flex;
+    }
   }
+  
 `
 
 export const SavedTopSt = Styled.div`

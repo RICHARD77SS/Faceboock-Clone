@@ -2,18 +2,7 @@
   {
     "id": 1,
     "userImage": "https://img.freepik.com/vetores-gratis/ilustracao-de-desenho-animado-de-cachorro-fofo-com-flor-rosa_138676-3234.jpg?w=740&t=st=1662239153~exp=1662239753~hmac=b51dcbbfeab341bf0778ec4465097fe62a5f4c4435ebc461afc80831baa37cc5",
-    "userImageAlt": "alt desc",
     "userName": "Richard silva",
-    "dataPost": "21 de agosto",
-    "titlePost": "Video para demonstraçao do componente",
-    "descriptionPost": "This video is very god",
-    "videoPost": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-  },
-  {
-    "id": 2,
-    "userImage": "https://img.freepik.com/vetores-gratis/ilustracao-de-desenho-animado-de-cachorro-fofo-com-flor-rosa_138676-3234.jpg?w=740&t=st=1662239153~exp=1662239753~hmac=b51dcbbfeab341bf0778ec4465097fe62a5f4c4435ebc461afc80831baa37cc5",
-    "userImageAlt": "alt desc",
-    "userName": "User 2",
     "dataPost": "21 de agosto",
     "titlePost": "Video para demonstraçao do componente",
     "descriptionPost": "This video is very god",

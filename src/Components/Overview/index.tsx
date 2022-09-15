@@ -6,6 +6,7 @@ import { AiOutlineLike } from 'react-icons/ai';
 import { GoComment } from 'react-icons/go';
 import { RiShareForwardLine } from 'react-icons/ri';
 import { IoMdArrowDropdown } from 'react-icons/io';
+import Interaction from '../Interaction';
 
 const Overview = () => {
   return (
@@ -15,18 +16,7 @@ const Overview = () => {
           <h3>God of war</h3>
           <p>God interruptes by giant dragon</p>
           <Interactionsb>
-            <Button>
-              <AiOutlineLike />
-              <p>Curtir</p>
-            </Button>
-            <Button>
-              <GoComment />
-              <p>Comentar</p>
-            </Button>
-            <Button>
-              <RiShareForwardLine />
-              <p>Compartilhar</p>
-            </Button>
+            <Interaction />
             <Button>
               <img src="https://i.postimg.cc/brczWrGr/richardsilva.jpg" alt="" />
               <IoMdArrowDropdown />

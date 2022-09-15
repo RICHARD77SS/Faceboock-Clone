@@ -4,7 +4,7 @@ export const WatchTopNavSt = Styled.div`
   width: 100%;
   height: 57px;
   padding: .5rem;
-  display: none;
+  display: flex;
   align-items: center;
   background: #fff;
   transform: translatey(-.5rem);
@@ -60,9 +60,6 @@ export const WatchTopNavSt = Styled.div`
     margin: 0 5px;
     background: ${Props => Props.theme.colors.secundary};
     filter: brightness(.9);
-  }
-  @media (max-width: 910px){
-    display: flex;
   }
   @media (max-width: 732px){
     .more {

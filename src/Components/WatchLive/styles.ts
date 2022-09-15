@@ -6,6 +6,10 @@ export const WatchLiveSt = Styled.div`
   margin: 0 auto;
   .topnav {
     transform: translatey(.5rem);
+    display: none;
+    @media (max-width: 910px){
+    display: flex;
+    }
   }
 `
 

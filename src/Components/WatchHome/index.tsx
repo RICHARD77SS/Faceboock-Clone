@@ -9,7 +9,7 @@ const WatchHome = () => {
 
   return (
     <WatchPostSt>
-      <WatchTopNav />
+      <WatchTopNav className='topnav' />
       <NewVideos />
       <RenderVideos />
     </WatchPostSt>

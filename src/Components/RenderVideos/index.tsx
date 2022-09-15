@@ -10,7 +10,6 @@ const WatchHome = () => {
       {VideosInfos.map((Infos) => {
         return (
           <ViewVideo userImage={Infos.userImage}
-            userImageAlt={Infos.userImageAlt}
             userName={Infos.userName}
             dataPost={Infos.dataPost}
             titlePost={Infos.titlePost}

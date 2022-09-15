@@ -6,7 +6,12 @@ export const Container = Styled.div`
   flex-direction: column;
   .topnav {
     transform: translatey(.5rem);
+    display: none;
+    @media (max-width: 910px){
+    display: flex;
+    }
   }
+  
 `
 
 export const WatchShowsSt = Styled.div`

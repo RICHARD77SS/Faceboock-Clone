@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, LiveChatSt, Comments, Post, BlockMess, Mess, MessInteractions, ChatFooter, HelpOwner, FixedMess, Support, BlockSup, ProgressBar, IconDiv, CommentArea, InputReactions, Icon } from './styles';
+import { Container, LiveChatSt, Comments, ChatFooter, HelpOwner, FixedMess, Support, BlockSup, ProgressBar, IconDiv, CommentArea, InputReactions, Icon } from './styles';
 import { RiShareForwardLine } from 'react-icons/ri';
 import { AiOutlineLike, AiOutlineStar } from 'react-icons/ai';
 import { BiNote } from 'react-icons/bi';
@@ -8,6 +8,7 @@ import { BsEmojiSmile, BsPinAngleFill } from 'react-icons/bs';
 import Input from './../Input/index';
 import { IoMdArrowDropdown, IoIosArrowForward } from 'react-icons/io';
 import Button from '../Button';
+import Comment from '../Comment';
 
 const LiveChat = () => {
   return (
@@ -15,160 +16,7 @@ const LiveChat = () => {
 
       <LiveChatSt id='btn-2' className='content'>
         <Comments>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
-          <Post>
-            <img src="https://img.freepik.com/fotos-gratis/adoravel-romantica-alegre-namorada-afro-americana-com-corte-de-cabelo-afro-inclinar-a-cabeca-mostrando-o-sinal-do-coracao-confessando-amor-e-carinho-vestindo-lenco-de-inverno-blusa-em-pe-sobre-a-parede-azul_1258-35440.jpg?w=740&t=st=1663163431~exp=1663164031~hmac=767b93ef321d31ee61c2e1322bd6b878c046e2768196620767f28cde17c6816f" alt="" />
-            <BlockMess>
-              <Mess>
-                <h4>Username</h4>
-                <p>comment for this video</p>
-              </Mess>
-              <MessInteractions>
-                <p>Curtir</p>
-                <p>Responder</p>
-                <p>10 min</p>
-              </MessInteractions>
-            </BlockMess>
-          </Post>
+          <Comment userImage='' userName='' comment='' dataComment=''/>
         </Comments>
         <ChatFooter>
           <HelpOwner>
