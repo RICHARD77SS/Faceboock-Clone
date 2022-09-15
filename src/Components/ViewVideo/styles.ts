@@ -21,6 +21,9 @@ export const PostTopSt = Styled.div`
   display: flex;
   align-items: start;
   flex-direction: column;
+  h3 {
+    margin: .3rem 0;
+  }
 `
 export const Flex1St = Styled.div`
   width: 100%;
@@ -38,6 +41,10 @@ export const Flex1St = Styled.div`
     height: 30px;
     border-radius: 30px;
     background: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
     :hover {
       background: ${Props => Props.theme.colors.hover};
     }

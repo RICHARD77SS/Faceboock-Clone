@@ -79,10 +79,10 @@ const VideoPage = () => {
               </TopTab>
               <CommentsContainer>
                 <Comments>
-                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
-                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
-                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
-                  <Comment userImage='' userName='Name of user' comment='Content message' dataComment='2 d' />
+                  <Comment userImage='https://i.postimg.cc/brczWrGr/richardsilva.jpg' userName='Name of user' comment='Content message' dataComment='2 d' />
+                  <Comment userImage='https://i.postimg.cc/brczWrGr/richardsilva.jpg' userName='Name of user' comment='Content message' dataComment='2 d' />
+                  <Comment userImage='https://i.postimg.cc/brczWrGr/richardsilva.jpg' userName='Name of user' comment='Content message' dataComment='2 d' />
+                  <Comment userImage='https://i.postimg.cc/brczWrGr/richardsilva.jpg' userName='Name of user' comment='Content message' dataComment='2 d' />
                   <CommentsFooter>
                     <Button>Ver mais comentários</Button>
                     <p>2 de 3.477</p>
@@ -95,7 +95,7 @@ const VideoPage = () => {
         </VideoContent>
         <Main>
           <MainContent>
-            <ViewVideo userImage='https://i.postimg.cc/brczWrGr/richardsilva.jpg' userImageAlt='' userName='' dataPost='' titlePost='' descriptionPost='' videoPost=''/>
+            <ViewVideo userImage='https://i.postimg.cc/brczWrGr/richardsilva.jpg' userImageAlt='' userName='Richard silva ' dataPost='3 d' titlePost='Title for this post' descriptionPost='Video post for examples' videoPost=''/>
           </MainContent>
           <SideMain>
             <h3>Explore mais vídeos no Watch</h3>
